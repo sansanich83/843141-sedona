@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>City of Sedona</title>
+  </head>
+  <body>
+    <header class="main-header">      
+      <a class="main-header-logo" href="index.html">
+        <img src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="info.html">информация</a></li>
+          <li><a href="foto_video.html">фото и видео</a></li>
+          <li><a href="map.html">карта штата</a></li>
+          <li class="menu-current"><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>  
+    <main>
+      <!-- фильтр -->
+      <section class="filter">
+        <ul>
+          <li><h2>Инфраструктура:</h2></li>
+          <li class="chekbox">Бассейн</li>
+          <li class="chekbox">Парковка</li>
+          <li class="chekbox">Wi-Fi</li>
+        </ul>
+        <ul>
+          <li><h2>Тип жилья:</h2></li>
+          <li class="chekbox">Гостиница</li>
+          <li class="chekbox">Мотель</li>
+          <li class="chekbox">Апартаменты</li>
+        </ul>
+        <h2>Стоимость в сутки (Р):</h2>
+        <table>
+          <tr>
+            <td><input class="price-from"></td>
+            <td><input class="price-to"></td>
+          </tr>
+          <tr><td>Ползунок</td>
+            <!-- Ползунок -->
+          </tr>
+          <tr>
+            <button>Показать</button>
+          </tr>
+        </table>
+        <div class="sorting-found">
+          <b>Найдено:</b>
+          <!-- Добавить число найденных гостиниц после поиска с фильтром -->
+          <ul class="sorting">
+            <li ><h3>Сортировка:</h3></li>
+            <li>по цене</li>
+            <li>по типу</li>
+            <li>по рейтингу</li>
+          </ul>        
+        <span>по возрастанию</span>
+        <span>по убыванию</span>
+        </div>
+      </section>
+      <div>
+        <!-- Место для показа карточек гостиниц после поиска -->
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class=footer-social>
+        <b>#visitsedona</b>
+        <ul>
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фэйсбук</a></li>
+          <li><a class="social-button" href="#">YouTube</a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Website by</b>
+        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+      </p>
+    </footer>
+    </body>
+</html>

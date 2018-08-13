@@ -21,46 +21,46 @@
     <main>
       <!-- фильтр -->
       <section class="filter">
-        <ul>
-          <li><h2>Инфраструктура:</h2></li>
-          <li class="chekbox">Бассейн</li>
-          <li class="chekbox">Парковка</li>
-          <li class="chekbox">Wi-Fi</li>
+        <h2 class="visually-hidden">Параметры подбора жилья</h2>
+        <ul class="filter-param">
+          <li><h3>Инфраструктура:</h3></li>
+          <li class="chekbox"><input type="checkbox">Бассейн</li>
+          <li class="chekbox"><input type="checkbox">Парковка</li>
+          <li class="chekbox"><input type="checkbox">Wi-Fi</li>
         </ul>
-        <ul>
-          <li><h2>Тип жилья:</h2></li>
-          <li class="chekbox">Гостиница</li>
-          <li class="chekbox">Мотель</li>
-          <li class="chekbox">Апартаменты</li>
-        </ul>
-        <h2>Стоимость в сутки (Р):</h2>
-        <table>
-          <tr>
-            <td><input class="price-from"></td>
-            <td><input class="price-to"></td>
-          </tr>
-          <tr><td>Ползунок</td>
-            <!-- Ползунок -->
-          </tr>
-          <tr>
+        <ul class="filter-param">
+          <li><h3>Тип жилья:</h3></li>
+          <li class="chekbox"><input type="checkbox">Гостиница</li>
+          <li class="chekbox"><input type="checkbox">Мотель</li>
+          <li class="chekbox"><input type="checkbox">Апартаменты</li>
+        </ul>        
+        <div class="price-range filter-param">
+          <h3>Стоимость в сутки (Р):</h3>
+          <div>
+            от<input class="price-from">
+            до<input class="price-to">
+          </div>
+            <input type="range">
+          <div>
             <button>Показать</button>
-          </tr>
-        </table>
+          </div>
+        </div>
         <div class="sorting-found">
-          <b>Найдено:</b>
-          <!-- Добавить число найденных гостиниц после поиска с фильтром -->
+          <b>Найдено:<span class="result-number"></span></b>
+          <!-- Определить число найденных гостиниц после поиска с фильтром -->
+          <h3>Сортировка:</h3>
           <ul class="sorting">
-            <li ><h3>Сортировка:</h3></li>
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по рейтингу</li>
+            <li><a class="sorting-key" href="#">по цене</a></li>
+            <li><a class="sorting-key" href="#">по типу</a></li>
+            <li><a class="sorting-key" href="#">по рейтингу</a></li>
           </ul>        
-        <span>по возрастанию</span>
-        <span>по убыванию</span>
+        <span><a class="sorting-key" href="#"><img src="decrease.png" alt="по убыванию"></a></span>
+        <span><a class="sorting-key" href="#"><img src="increase.png" alt="по возрастанию"></a></span>
         </div>
       </section>
       <div>
         <!-- Место для показа карточек гостиниц после поиска -->
+
       </div>
     </main>
     <footer class="main-footer">

@@ -19,9 +19,10 @@
       </nav>
     </header>  
     <main>
+      <h1 class="visualy-hidden">Подбор гостиниц по параметрам</h1>
       <!-- фильтр -->
       <section class="filter">
-        <h2 class="visually-hidden">Параметры подбора жилья</h2>
+        <h2 class="visualy-hidden">Параметры подбора жилья</h2>
         <ul class="filter-param">
           <li><h3>Инфраструктура:</h3></li>
           <li class="chekbox"><input type="checkbox">Бассейн</li>
@@ -46,7 +47,7 @@
           </div>
         </div>
         <div class="sorting-found">
-          <b>Найдено:<span class="result-number"></span></b>
+          <b>Найдено:<span class="result-number">3</span></b>
           <!-- Определить число найденных гостиниц после поиска с фильтром -->
           <h3>Сортировка:</h3>
           <ul class="sorting">
@@ -58,10 +59,52 @@
         <span><a class="sorting-key" href="#"><img src="increase.png" alt="по возрастанию"></a></span>
         </div>
       </section>
-      <div>
-        <!-- Место для показа карточек гостиниц после поиска -->
-
-      </div>
+      <!-- далее идет показ карточек гостиниц после поиска -->
+      <section>
+        <h2 class="visualy-hidden">Найденные гостиницы</h2>
+        <div class="hotel-1">  
+          <a href="amara-resort.html"><img src="amara-resort.png" alt="Превью"></a>
+          <div>
+            <b>Amara resort & SPA</b>
+            <p class="house-type"><span>Гостиница</span></p>
+            <p class="min-price">от <span>4000</span></p>
+            <a class="hotels-detail-button" href="#"><button>Подробнее</button></a>
+            <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
+          </div>
+          <div class="rating">
+              <span class="rating-stars">4 звезды</span> <!-- фон с количеством звезд -->
+              <p><span class="rating-digit">8,5</span></p>
+          </div>
+        </div>
+        <div class="hotel-2">  
+            <a href="desert-quail.html"><img src="desert-quail.png" alt="Превью"></a>
+            <div>
+              <b>Desert quail inn</b>
+              <p class="house-type"><span>Мотель</span></p>
+              <p class="min-price">от <span>3000</span></p>
+              <a class="hotels-detail-button" href="#"><button>Подробнее</button></a>
+              <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
+            </div>
+            <div class="rating">
+                <span class="rating-stars">3 звезды</span> <!-- фон с количеством звезд -->
+                <p><span class="rating-digit">8,9</span></p>
+            </div>
+          </div>
+          <div class="hotel-3">  
+              <a href="Villas-at-poco-diablo.html"><img src="Villas-at-poco-diablo.png" alt="Превью"></a>
+              <div>
+                <b>Villas-at-poco-diablo</b>
+                <p class="house-type"><span>Аппартаменты</span></p>
+                <p class="min-price">от <span>2000</span></p>
+                <a class="hotels-detail-button" href="#"><button>Подробнее</button></a>
+                <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
+              </div>
+              <div class="rating">
+                  <span class="rating-stars">2 звезды</span> <!-- фон с количеством звезд -->
+                  <p><span class="rating-digit">9,2</span></p>
+              </div>
+            </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class=footer-social>

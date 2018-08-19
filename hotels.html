@@ -3,6 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>City of Sedona</title>
+    <style type="text/css">
+    .rating-stars {
+      width: 110px;
+      height: 27px;
+      background: url(img/star.svg) repeat-x;
+    }
+    .social-button {
+        background: #81b3d2;
+        width: 46px;
+        height: 48px;
+        float: left;
+        margin: 10px;
+        }
+      .social-icon {
+        padding: 15px 15px;
+      }
+    </style>
   </head>
   <body>
     <header class="main-header">      
@@ -19,49 +36,52 @@
       </nav>
     </header>  
     <main>
-      <h1 class="visualy-hidden">Подбор гостиниц по параметрам</h1>
+      <h1 class="visually-hidden">Подбор гостиниц по параметрам</h1>
       <!-- фильтр -->
       <section class="filter">
-        <h2 class="visualy-hidden">Параметры подбора жилья</h2>
-        <ul class="filter-param">
-          <li><h3>Инфраструктура:</h3></li>
-          <li class="chekbox"><input type="checkbox">Бассейн</li>
-          <li class="chekbox"><input type="checkbox">Парковка</li>
-          <li class="chekbox"><input type="checkbox">Wi-Fi</li>
-        </ul>
-        <ul class="filter-param">
-          <li><h3>Тип жилья:</h3></li>
-          <li class="chekbox"><input type="checkbox">Гостиница</li>
-          <li class="chekbox"><input type="checkbox">Мотель</li>
-          <li class="chekbox"><input type="checkbox">Апартаменты</li>
-        </ul>        
-        <div class="price-range filter-param">
-          <h3>Стоимость в сутки (Р):</h3>
-          <div>
-            от<input class="price-from">
-            до<input class="price-to">
-          </div>
-            <input type="range">
-          <div>
-            <button>Показать</button>
-          </div>
-        </div>
-        <div class="sorting-found">
-          <b>Найдено:<span class="result-number">3</span></b>
-          <!-- Определить число найденных гостиниц после поиска с фильтром -->
-          <h3 class="visualy-hidden">Сортировка:</h3>
-          <ul class="sorting">
-            <li><a class="sorting-key" href="#">по цене</a></li>
-            <li><a class="sorting-key" href="#">по типу</a></li>
-            <li><a class="sorting-key" href="#">по рейтингу</a></li>
+        <form action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Параметры подбора жилья</h2>
+          <ul class="filter-param">
+            <li><h3>Инфраструктура:</h3></li>
+            <li class="chekbox"><input name="pool" type="checkbox">Бассейн</li>
+            <li class="chekbox"><input name="parking" type="checkbox">Парковка</li>
+            <li class="chekbox"><input name="wi-fi" type="checkbox">Wi-Fi</li>
+          </ul>
+          <ul class="filter-param">
+            <li><h3>Тип жилья:</h3></li>
+            <li class="chekbox"><input name="inn" type="checkbox">Гостиница</li>
+            <li class="chekbox"><input name="motel" type="checkbox">Мотель</li>
+            <li class="chekbox"><input name="appartaments" type="checkbox">Апартаменты</li>
           </ul>        
-        <span><a class="sorting-key" href="#"><img src="decrease.png" alt="по убыванию"></a></span>
-        <span><a class="sorting-key" href="#"><img src="increase.png" alt="по возрастанию"></a></span>
-        </div>
+          <div class="price-range filter-param">
+            <h3>Стоимость в сутки (Р):</h3>
+            <div>
+              от<input name="price-min" class="price-from">
+              до<input name="price-max" class="price-to">
+            </div>
+              <input min="0" max="3000" step="100" value="100" type="range">
+            <div>
+              <button type="submit">Показать</button>
+            </div>
+          </div>
+          <!-- Сортировка -->
+          <div class="sorting-found">
+            <b>Найдено:<div class="result-number">3</div></b>
+            <!-- Определить число найденных гостиниц после поиска с фильтром -->
+            <h3 class="visually-hidden">Сортировка:</h3>
+            <ul class="sorting">
+              <li><a class="sorting-key" href="#">по цене</a></li>
+              <li><a class="sorting-key" href="#">по типу</a></li>
+              <li><a class="sorting-key" href="#">по рейтингу</a></li>
+            </ul>        
+          <span><a class="sorting-key" href="#"><img src="decrease.png" alt="по убыванию"></a></span>
+          <span><a class="sorting-key" href="#"><img src="increase.png" alt="по возрастанию"></a></span>
+          </div>
+        </form>
       </section>
       <!-- далее идет показ карточек гостиниц после поиска -->
       <section>
-        <h2 class="visualy-hidden">Найденные гостиницы</h2>
+        <h2 class="visually-hidden">Найденные гостиницы</h2>
         <div class="hotel-1">  
           <a href="amara-resort.html"><img src="img/amara-resort.jpg" alt="Превью"></a>
           <div>
@@ -72,7 +92,7 @@
             <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
           </div>
           <div class="rating">
-              <span class="rating-stars">4 звезды</span> <!-- фон с количеством звезд -->
+              <div class="rating-stars"></div> <!-- фон с количеством звезд -->
               <p><span class="rating-digit">8,5</span></p>
           </div>
         </div>
@@ -86,7 +106,7 @@
               <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
             </div>
             <div class="rating">
-                <span class="rating-stars">3 звезды</span> <!-- фон с количеством звезд -->
+                <div class="rating-stars"></div> <!-- фон с количеством звезд -->
                 <p><span class="rating-digit">8,9</span></p>
             </div>
           </div>
@@ -100,7 +120,7 @@
                 <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
               </div>
               <div class="rating">
-                  <span class="rating-stars">2 звезды</span> <!-- фон с количеством звезд -->
+                  <div class="rating-stars"></div> <!-- фон с количеством звезд -->
                   <p><span class="rating-digit">9,2</span></p>
               </div>
             </div>
@@ -110,9 +130,9 @@
       <div class=footer-social>
         <b>#visitsedona</b>
         <ul>
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фэйсбук</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li type="none" class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg" alt="Иконка Твиттер"></a></li>
+          <li type="none" class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg" alt="Иконка Фэйсбук"></a></li>
+          <li type="none" class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg" alt="Иконка Ютуб"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">

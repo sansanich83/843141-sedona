@@ -7,7 +7,7 @@
     .rating-stars {
       width: 110px;
       height: 27px;
-      background: url(img/star.svg) repeat-x;
+      background: url(img/star.svg) no-repeat 5px, url(img/star.svg) 25px no-repeat ;
     }
     .social-button {
         background: #81b3d2;
@@ -24,7 +24,7 @@
   <body>
     <header class="main-header">      
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="140px" alt="Логотип">
+        <img src="img/logo.svg" width="140" alt="Логотип">
       </a>
       <nav class="main-menu">
         <ul>
@@ -43,15 +43,15 @@
         <h2 class="visually-hidden">Параметры подбора жилья</h2>
           <ul class="filter-param">
             <li><h3>Инфраструктура:</h3></li>
-            <li class="chekbox"><input name="pool" type="checkbox">Бассейн</li>
-            <li class="chekbox"><input name="parking" type="checkbox">Парковка</li>
-            <li class="chekbox"><input name="wi-fi" type="checkbox">Wi-Fi</li>
+            <li class="chekbox"><label><input name="pool" type="checkbox">Бассейн</label></li>
+            <li class="chekbox"><label><input name="parking" type="checkbox">Парковка</label></li>
+            <li class="chekbox"><label><input name="wi-fi" type="checkbox">Wi-Fi</label></li>
           </ul>
           <ul class="filter-param">
             <li><h3>Тип жилья:</h3></li>
-            <li class="chekbox"><input name="inn" type="checkbox">Гостиница</li>
-            <li class="chekbox"><input name="motel" type="checkbox">Мотель</li>
-            <li class="chekbox"><input name="appartaments" type="checkbox">Апартаменты</li>
+            <li class="chekbox"><label><input name="inn" type="checkbox">Гостиница</label></li>
+            <li class="chekbox"><label><input name="motel" type="checkbox">Мотель</label></li>
+            <li class="chekbox"><label><input name="appartaments" type="checkbox">Апартаменты</label></li>
           </ul>        
           <div class="price-range filter-param">
             <h3>Стоимость в сутки (Р):</h3>
@@ -83,7 +83,7 @@
       <section>
         <h2 class="visually-hidden">Найденные гостиницы</h2>
         <div class="hotel-1">  
-          <a href="amara-resort.html"><img src="img/amara-resort.jpg" alt="Превью"></a>
+          <a href="amara-resort.html"><img src="img/amara-resort.jpg" width="135" alt="Превью"></a>
           <div>
             <b>Amara resort & SPA</b>
             <p class="house-type"><span>Гостиница</span></p>
@@ -97,7 +97,7 @@
           </div>
         </div>
         <div class="hotel-2">  
-            <a href="desert-quail.html"><img src="img/desert-quail.jpg" alt="Превью"></a>
+            <a href="desert-quail.html"><img src="img/desert-quail.jpg" width="135" alt="Превью"></a>
             <div>
               <b>Desert quail inn</b>
               <p class="house-type"><span>Мотель</span></p>
@@ -111,7 +111,7 @@
             </div>
           </div>
           <div class="hotel-3">  
-              <a href="Villas-at-poco-diablo.html"><img src="img/villas-at-poco-diablo.jpg" alt="Превью"></a>
+              <a href="Villas-at-poco-diablo.html"><img src="img/villas-at-poco-diablo.jpg" width="135" alt="Превью"></a>
               <div>
                 <b>Villas-at-poco-diablo</b>
                 <p class="house-type"><span>Аппартаменты</span></p>

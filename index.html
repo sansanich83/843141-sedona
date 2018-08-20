@@ -132,14 +132,20 @@
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
         </div>
         <!-- Форма поиска -->
+        <a class="form-title" href="#">Поиск гостиницы в Седоне</a> 
     <form action="https://echo.htmlacademy.ru" method="post">
     <div class="search-form">
-      <h1 class="form-title">Поиск гостиницы в Седоне</h1>  
       <div class="show-form">
           <p>Дата заезда: <button type="button" class="date" name="arrival-date"><img src="img/calendar.svg" width="21" align="right" alt="календарь для выбора даты">24 Апреля 2017</button></p>
           <p>Дата выезда: <button type="button" class="date" name="departure-date"><img src="img/calendar.svg" width="21" align="right" alt="календарь для выбора даты">4 Июля 2017</button></p>
-          <p><label>Взрослые: <img src="img/minus.png" alt="Уменьшить"><input name="adults" size="1"><img src="img/plus.png" alt="Увеличить"></label> 
-             <label>Дети:<img src="img/minus.png" alt="Уменьшить"><input name="childs" size=1><img src="img/plus.png" alt="Увеличить"></label>
+          <p><label for="adults-number">Взрослые:</label>
+             <button class="button-minus" type="button"><img src="img/minus.png" alt="Уменьшить"></button>
+             <input id="adults-number" name="adults" size="1">
+             <button class="button-plus" type="button"><img src="img/plus.png" alt="Увеличить"></button> 
+             <label for="childs-number">Дети:</label>
+             <button class="button-minus" type="button"><img src="img/minus.png" alt="Уменьшить"></button>
+             <input id="childs-number" name="childs" size=1>
+             <button class="button-plus" type="button"><img src="img/plus.png" alt="Увеличить"></button>
           </p>
           <p><button>Найти</button></p>
         </div>

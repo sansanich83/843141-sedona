@@ -21,6 +21,9 @@
       .social-icon {
         padding: 15px 15px;
       }
+      .social-button {
+        list-style-type: none;
+      }
       /* .show-form{
     position:absolute;
     background:rgba(255,255,255, 0.7);
@@ -55,7 +58,7 @@
   <body>
     <header class="main-header">      
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="140px" alt="Логотип">
+        <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
       </a>
       <nav class="main-menu">
         <ul>
@@ -69,7 +72,7 @@
     <main>
       <h1 class="visually-hidden">Гостиницы в Седоне</h1>
       <section class="welcoming">
-        <img src="img/welcome.svg" width="459" alt="Welcome to the gorgeous SEDONA because the Grand Canyon suks!">
+        <img src="img/welcome.svg" width="459" height="353" alt="Welcome to the gorgeous SEDONA because the Grand Canyon suks!">
       </section>
         <article class="advantages">
           <h2>Седона-небольшой городок в аризоне,
@@ -82,7 +85,7 @@
               <h3>Настоящий городок</h3>
               <p>№1</p>
               <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-              <img src="img/reason-1.jpg" width="800" alt="город Седона"> 
+              <img src="img/reason-1.jpg" width="800" height="401" alt="город Седона"> 
             </section>
           </li>
           <li>
@@ -103,7 +106,7 @@
               <h3>Там есть мост дьявола</h3>
               <p>№2</p>
               <p>да, по нему можно пройти если конечно вы осмелитесь</p>
-              <img src="img/reason-2.jpg" width="800" alt="Мост дьявола">
+              <img src="img/reason-2.jpg" width="800" height="400" alt="Мост дьявола">
             </section>
           </li>
           <li>
@@ -135,38 +138,42 @@
         <a class="form-title" href="#">Поиск гостиницы в Седоне</a> 
     <form action="https://echo.htmlacademy.ru" method="post">
     <div class="search-form">
-      <div class="show-form">
-          <p>Дата заезда: <button type="button" class="date" name="arrival-date"><img src="img/calendar.svg" width="21" align="right" alt="календарь для выбора даты">24 Апреля 2017</button></p>
-          <p>Дата выезда: <button type="button" class="date" name="departure-date"><img src="img/calendar.svg" width="21" align="right" alt="календарь для выбора даты">4 Июля 2017</button></p>
-          <p><label for="adults-number">Взрослые:</label>
-             <button class="button-minus" type="button"><img src="img/minus.png" alt="Уменьшить"></button>
-             <input id="adults-number" name="adults" size="1">
-             <button class="button-plus" type="button"><img src="img/plus.png" alt="Увеличить"></button> 
-             <label for="childs-number">Дети:</label>
-             <button class="button-minus" type="button"><img src="img/minus.png" alt="Уменьшить"></button>
-             <input id="childs-number" name="childs" size=1>
-             <button class="button-plus" type="button"><img src="img/plus.png" alt="Увеличить"></button>
+        <label>
+          <span>Дата заезда:</span>
+          <button type="button" class="date" name="arrival-date"><img src="img/calendar.svg" width="21" height="22" align="right" alt="календарь для выбора даты">24 Апреля 2017</button>
+        </label>
+        <label>  
+          <span>Дата выезда:</span>
+          <button type="button" class="date" name="departure-date"><img src="img/calendar.svg" width="21" height="22" align="right" alt="календарь для выбора даты">4 Июля 2017</button>
+        </label>  
+          <p><label for="adults-number"><span>Взрослые:</span></label>
+             <button class="button-minus" type="button"><img src="img/minus.png" width="12" height="3" alt="Уменьшить"></button>
+             <input id="adults-number" name="adults" placeholder="2" size="1">
+             <button class="button-plus" type="button"><img src="img/plus.png" width="11" height="11" alt="Увеличить"></button> 
+             <label for="childs-number"><span>Дети:</span></label>
+             <button class="button-minus" type="button"><img src="img/minus.png" width="12" height="3" alt="Уменьшить"></button>
+             <input id="childs-number" name="childs" placeholder="0" size=1>
+             <button class="button-plus" type="button"><img src="img/plus.png" width="11" height="11" alt="Увеличить"></button>
           </p>
           <p><button>Найти</button></p>
-        </div>
       </div>
     </form>
     <section class="map">
-      <img src="img/map.jpg" width="1200" alt="Карта расположения города Седона">
+      <img src="img/map.jpg" width="1200" height="593" alt="Карта расположения города Седона">
     </section>   
     </main>
     <footer class="main-footer">
       <div class=footer-social>
         <b style="float:left;">#visitsedona</b>
         <ul>
-          <li type="none" class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg" alt="Иконка Твиттер"></a></li>
-          <li type="none" class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg" alt="Иконка Фэйсбук"></a></li>
-          <li type="none" class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg" alt="Иконка Ютуб"></a></li>
+          <li class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg" width="17" height="15" alt="Иконка Твиттер"></a></li>
+          <li class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук"></a></li>
+          <li class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg" width="20" height="16" alt="Иконка Ютуб"></a></li>
         </ul>
       </div>
       <p class="footer-copyright">
         <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+        <a class="html-academy" href="https://htmlacademy.ru"><img src="img/logo_HTMLacademy.svg" alt="HTML academy" width="115" height="41"></a>
       </p>
     </footer>
     </body>

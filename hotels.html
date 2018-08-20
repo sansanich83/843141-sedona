@@ -19,12 +19,15 @@
       .social-icon {
         padding: 15px 15px;
       }
+      .social-button {
+        list-style-type: none;
+      }
     </style>
   </head>
   <body>
     <header class="main-header">      
       <a class="main-header-logo" href="index.html">
-        <img src="img/logo.svg" width="140" alt="Логотип">
+        <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
       </a>
       <nav class="main-menu">
         <ul>
@@ -41,105 +44,105 @@
       <section class="filter">
         <form action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Параметры подбора жилья</h2>
-          <ul class="filter-param">
-            <li><h3>Инфраструктура:</h3></li>
-            <li class="chekbox"><label><input name="pool" type="checkbox">Бассейн</label></li>
-            <li class="chekbox"><label><input name="parking" type="checkbox">Парковка</label></li>
-            <li class="chekbox"><label><input name="wi-fi" type="checkbox">Wi-Fi</label></li>
+        <h3>Инфраструктура:</h3>
+        <ul class="filter-param">
+            <li class="chekbox"><input id="pool-id" name="pool" type="checkbox"><label for="pool-id">Бассейн</label></li>
+            <li class="chekbox"><input id="parking-id" name="parking" type="checkbox"><label for="parking-id">Парковка</label></li>
+            <li class="chekbox"><input id="wi-fi-id" name="wi-fi" type="checkbox"><label for="wi-fi-id">Wi-Fi</label></li>
           </ul>
+          <h3>Тип жилья:</h3>
           <ul class="filter-param">
-            <li><h3>Тип жилья:</h3></li>
-            <li class="chekbox"><label><input name="inn" type="checkbox">Гостиница</label></li>
-            <li class="chekbox"><label><input name="motel" type="checkbox">Мотель</label></li>
-            <li class="chekbox"><label><input name="appartaments" type="checkbox">Апартаменты</label></li>
+            <li class="chekbox"><input id="inn-id" name="inn" type="checkbox"><label for="inn-id">Гостиница</label></li>
+            <li class="chekbox"><input id="motel-id" name="motel" type="checkbox"><label for="motel-id">Мотель</label></li>
+            <li class="chekbox"><input id="appartaments-id" name="appartaments" type="checkbox"><label for="appartaments-id">Апартаменты</label></li>
           </ul>        
           <div class="price-range filter-param">
             <h3>Стоимость в сутки (Р):</h3>
             <div>
-              от<input name="price-min" class="price-from">
-              до<input name="price-max" class="price-to">
+              <label>от<input name="price-min" class="price-from"></label>
+              <label>до<input name="price-max" class="price-to"></label>
             </div>
               <input min="0" max="3000" step="100" value="100" type="range">
             <div>
               <button type="submit">Показать</button>
             </div>
           </div>
+        </form>
           <!-- Сортировка -->
           <div class="sorting-found">
-            <b>Найдено:<div class="result-number">3</div></b>
+            <div><b>Найдено:</b><span class="result-number">3</span></div>
             <!-- Определить число найденных гостиниц после поиска с фильтром -->
-            <h3 class="visually-hidden">Сортировка:</h3>
+            <b>Сортировка:<b>
             <ul class="sorting">
               <li><a class="sorting-key" href="#">по цене</a></li>
               <li><a class="sorting-key" href="#">по типу</a></li>
               <li><a class="sorting-key" href="#">по рейтингу</a></li>
             </ul>        
-          <span><a class="sorting-key" href="#"><img src="decrease.png" alt="по убыванию"></a></span>
-          <span><a class="sorting-key" href="#"><img src="increase.png" alt="по возрастанию"></a></span>
+          <a aria-label="Сначала дешевые" class="sorting-key" href="#"><img src="img/icon-up-dir.svg" width="11" height="10" alt="Сначала дешевые"></a>
+          <a aria-label="Сначала дорогие" class="sorting-key" href="#"><img src="img/icon-down-dir.svg" width="11" height="10" alt="Сначала дорогие"></a>
           </div>
-        </form>
       </section>
       <!-- далее идет показ карточек гостиниц после поиска -->
       <section>
         <h2 class="visually-hidden">Найденные гостиницы</h2>
         <div class="hotel-1">  
-          <a href="amara-resort.html"><img src="img/amara-resort.jpg" width="135" alt="Превью"></a>
+          <a href="amara-resort.html"><img src="img/amara-resort.jpg" width="135" height="90" alt="Превью"></a>
           <div>
             <b>Amara resort & SPA</b>
-            <p class="house-type"><span>Гостиница</span></p>
-            <p class="min-price">от <span>4000</span></p>
-            <a class="hotels-detail-button" href="#"><button>Подробнее</button></a>
-            <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
+            <p class="house-type">Гостиница</p>
+            <p class="min-price">от 4000 Р.</p>
+            <a class="hotels-detail-button" href="#">Подробнее</a>
+            <a class="hotels-order-button" href="#">Забронировать</a>
           </div>
           <div class="rating">
-              <div class="rating-stars"></div> <!-- фон с количеством звезд -->
-              <p><span class="rating-digit">8,5</span></p>
+              <div aria-label="4 звезды" class="rating-stars"><span class="visually-hidden">4 звезды</span></div> <!-- фон с количеством звезд -->
+              <p><span aria-label="оценка" class="rating-digit">8,5</span></p>
           </div>
         </div>
         <div class="hotel-2">  
-            <a href="desert-quail.html"><img src="img/desert-quail.jpg" width="135" alt="Превью"></a>
+            <a href="desert-quail.html"><img src="img/desert-quail.jpg" width="135" height="90" alt="Превью"></a>
             <div>
               <b>Desert quail inn</b>
-              <p class="house-type"><span>Мотель</span></p>
-              <p class="min-price">от <span>3000</span></p>
-              <a class="hotels-detail-button" href="#"><button>Подробнее</button></a>
-              <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
+              <p class="house-type">Мотель</p>
+              <p class="min-price">от 3000 Р.</p>
+              <a class="hotels-detail-button" href="#">Подробнее</a>
+              <a class="hotels-order-button" href="#">Забронировать</a>
             </div>
             <div class="rating">
-                <div class="rating-stars"></div> <!-- фон с количеством звезд -->
-                <p><span class="rating-digit">8,9</span></p>
+                <div aria-label="3 звезды" class="rating-stars"><span class="visually-hidden">3 звезды</span></div> <!-- фон с количеством звезд -->
+                <p><span aria-label="оценка" class="rating-digit">8,9</span></p>
             </div>
           </div>
           <div class="hotel-3">  
-              <a href="Villas-at-poco-diablo.html"><img src="img/villas-at-poco-diablo.jpg" width="135" alt="Превью"></a>
+              <a href="Villas-at-poco-diablo.html"><img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Превью"></a>
               <div>
                 <b>Villas-at-poco-diablo</b>
-                <p class="house-type"><span>Аппартаменты</span></p>
-                <p class="min-price">от <span>2000</span></p>
-                <a class="hotels-detail-button" href="#"><button>Подробнее</button></a>
-                <a class="hotels-order-button" href="#"><button>Забронировать</button></a>
+                <p class="house-type">Аппартаменты</p>
+                <p class="min-price">от 2000 Р.</p>
+                <a class="hotels-detail-button" href="#">Подробнее</a>
+                <a class="hotels-order-button" href="#">Забронировать</a>
               </div>
               <div class="rating">
-                  <div class="rating-stars"></div> <!-- фон с количеством звезд -->
+                  <div class="rating-stars"><span class="visually-hidden">2 звезды</span></div> <!-- фон с количеством звезд -->
                   <p><span class="rating-digit">9,2</span></p>
               </div>
             </div>
       </section>
     </main>
     <footer class="main-footer">
-      <div class=footer-social>
-        <b>#visitsedona</b>
-        <ul>
-          <li type="none" class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg" alt="Иконка Твиттер"></a></li>
-          <li type="none" class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg" alt="Иконка Фэйсбук"></a></li>
-          <li type="none" class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg" alt="Иконка Ютуб"></a></li>
-        </ul>
-      </div>
-      <p class="footer-copyright">
-        <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
-      </p>
-    </footer>
+        <div class=footer-social>
+          <b style="float:left;">#visitsedona</b>
+          <ul>
+            <li class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg" width="17" height="15" alt="Иконка Твиттер"></a></li>
+            <li class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg" width="12" height="22" alt="Иконка Фэйсбук"></a></li>
+            <li class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg" width="20" height="16" alt="Иконка Ютуб"></a></li>
+          </ul>
+        </div>
+        <p class="footer-copyright">
+          <b>Website by</b>
+          <a class="html-academy" href="https://htmlacademy.ru"><img src="img/logo_HTMLacademy.svg" alt="HTML academy" width="115" height="41"></a>
+        </p>
+      </footer>
     </body>
 </html>
 

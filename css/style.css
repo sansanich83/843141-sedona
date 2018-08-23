@@ -9,15 +9,45 @@ body {
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
-.main-menu{
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.social-button,
+.main-menu ul,
+.about-sedona ul,
+.filter-param,
+.sorting {
+  list-style-type: none;
+}
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.main-menu {
+  width: 1200px;
+  margin: auto;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
 }
+.main-menu a:hover,
+.main-menu a:focus {
+  color: #81b3d2;
+}
+.main-menu a:active {
+  color:#b2b2b2;
+}
+.menu-current a{
+  color: #766357;
+}
 .about-sedona h2 {
-  font-size: 11px;
+  font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -28,22 +58,31 @@ body {
   line-height: 26px;
   font-weight: 700;
   color: #333333;
-  background-color: #ffffff; 
+  background-color: #ffffff;
 }
 .main-reason {
-  
+  color:#ffffff;
 }
 .main-reason div {
   width: 400px;
   height: 256px;
-  border: 1px solid red;
   background-color: #81b3d2;
   display: inline-block;
   vertical-align: top;
-  margin-left:0; 
+  margin-left: 0;
+}
+.main-reason p {
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  font-weight: normal;
+}
+.main-reason h3 {
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
 }
 .reason-1 img {
-  
 }
 section.welcoming {
   border: 1px solid;
@@ -69,14 +108,9 @@ section.welcoming {
 .social-icon {
   padding: 15px 15px;
 }
-.social-button {
-  list-style-type: none;
-}
-.about-sedona ul {
-  list-style-type: none;
-}
-.main-menu ul {
-  list-style-type: none;
+
+.main-header-logo {
+  margin: auto;
 }
 /* .show-form{
     position:absolute;

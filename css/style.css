@@ -19,6 +19,8 @@ a {
 .filter-param,
 .sorting {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .visually-hidden {
   position: absolute;
@@ -28,13 +30,16 @@ a {
   margin: -1px;
 }
 .main-menu {
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%;
   width: 1200px;
-  margin: auto;
+  height: 56px;
   font-size: 14px;
   line-height: 26px;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
+
 }
 .main-menu a:hover,
 .main-menu a:focus {
@@ -67,7 +72,6 @@ a {
   width: 400px;
   height: 256px;
   background-color: #81b3d2;
-  display: inline-block;
   vertical-align: top;
   margin-left: 0;
 }
@@ -85,9 +89,29 @@ a {
 .reason-1 img {
 }
 section.welcoming {
-  border: 1px solid;
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%;  
   width: 1200px;
-  background-image: url("../img/welcoming.jpg");
+  min-height: 508px;
+  background: url("../img/welcoming.jpg") 0% -80px ;
+}
+.polygon {
+  width: 1200px;
+  min-height: 508px;
+   background: url("../img/polygon.svg") no-repeat 0% 100%;
+}
+.welcoming img {
+  margin-left: 33%;
+  margin-top: 76px;
+}
+.about-sedona-header {
+  text-align: center;
+}
+article.about-sedona {
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%;  
+  width: 1200px;
+  background-color: #ffffff;
 }
 .date {
   width: 346px;
@@ -108,36 +132,139 @@ section.welcoming {
 .social-icon {
   padding: 15px 15px;
 }
-
-.main-header-logo {
-  margin: auto;
+.secondary-reason div {
+  width: 400px;
+  text-align: center;
+  padding-left: 6%;
+  padding-right: 6%;
 }
-/* .show-form{
-    position:absolute;
-    background:rgba(255,255,255, 0.7);
-    padding:25px;
-    display:none;
-    z-index: 1;
-    }
-    .map {
+.reason-1-more h4, .secondary-reason h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.reason-1-more p, .secondary-reason p {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333;
+}
+.index-form-header b {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+.index-form-header p {
+  width:400px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+.index-form-header a {
+  width: 568px;
+  height: 86px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #766357;
+  padding:0;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 30px;
+  
+}
+.map {
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%; 
+  background-image: url(..//img/map.jpg);
+  width: 1200px;
+  min-height: 473px;
+}
+.search-button {
+  background: #81b3d2;
+  color:#ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-style: none;
+  width: 458px;
+  min-height: 58px; 
+}
+.main-footer {
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%;  
+  width: 1200px;
+}
 
-    z-index: 2;
-    }
-        .search-form{
-    position:relative;   
-    width:568px;
-    height:400px;
-    border: 1px solid black;
-    margin:100px auto;
-    float: left;
 
-    }
-        .search-form:hover.show-form {
-        display: block;
-    } 
-    .form-title {
-    color: white;
-  background: brown;
-  font-size:22px;
-  width:568px;
-} */
+
+/* Сетка флексбоксы */
+
+.main-menu ul {
+  height: 56px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center ;
+}
+.main-header-logo {
+  align-self: flex-end; /* не работает */
+}
+.reason-1 {
+  display: flex;
+  width: 1200px;
+}
+.reason-2 {
+  display: flex;
+  width: 1200px;
+  flex-direction: row-reverse;
+}
+article.about-sedona {
+  display: flex;
+  flex-direction: column;
+}
+.reason-1-more {
+  min-height: 330px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.secondary-reason {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  min-height: 256px;
+  background-color: #eeeeee;
+}
+
+div.index-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 286px;
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%;  
+  width: 1200px;
+  padding-top: 55px;
+}
+
+.search-form {
+  background-color: #ffffff;
+  margin: auto;
+  width: 568px;
+  min-height: 395px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.main-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

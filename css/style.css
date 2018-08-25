@@ -1,5 +1,6 @@
 body {
-  margin: 0;
+  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
+  margin-left: 2%;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
@@ -8,6 +9,8 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #f2f2f2;
+
+
 }
 a {
   text-decoration: none;
@@ -22,16 +25,19 @@ a {
   margin: 0;
   padding: 0;
 }
+.main-header-logo {
+  position: absolute;
+  left: 50%;
+}
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
+  overflow: hidden;
 }
 .main-menu {
-  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
-  margin-left: 2%;
   width: 1200px;
   height: 56px;
   font-size: 14px;
@@ -88,9 +94,7 @@ a {
 }
 .reason-1 img {
 }
-section.welcoming {
-  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
-  margin-left: 2%;  
+section.welcoming { 
   width: 1200px;
   min-height: 508px;
   background: url("../img/welcoming.jpg") 0% -80px ;
@@ -107,9 +111,7 @@ section.welcoming {
 .about-sedona-header {
   text-align: center;
 }
-article.about-sedona {
-  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
-  margin-left: 2%;  
+article.about-sedona { 
   width: 1200px;
   background-color: #ffffff;
 }
@@ -176,9 +178,7 @@ article.about-sedona {
   
 }
 .map {
-  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
-  margin-left: 2%; 
-  background-image: url(..//img/map.jpg);
+  background-image: url(../img/map.jpg);
   width: 1200px;
   min-height: 473px;
 }
@@ -194,9 +194,8 @@ article.about-sedona {
   min-height: 58px; 
 }
 .main-footer {
-  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
-  margin-left: 2%;  
   width: 1200px;
+  min-height: 120px;
 }
 
 
@@ -209,9 +208,7 @@ article.about-sedona {
   justify-content: space-around;
   align-items: center ;
 }
-.main-header-logo {
-  align-self: flex-end; /* не работает */
-}
+
 .reason-1 {
   display: flex;
   width: 1200px;
@@ -245,8 +242,6 @@ div.index-form-header {
   align-items: center;
   justify-content: space-between;
   min-height: 286px;
-  box-shadow: -5px 3px 5px 0 #c0c1c4, 5px 3px 5px 0 #c0c1c4;
-  margin-left: 2%;  
   width: 1200px;
   padding-top: 55px;
 }
@@ -267,4 +262,40 @@ div.index-form-header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+/* Hotels.html */
+
+/* Фильтр */
+
+.filter form {
+  background-color:#81b3d2;
+  background-image: url(../img/filter_background.jpg);
+  background-position: 0 -300px;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  width: 1200px;
+  min-height: 217px;
+}
+.sorting-found {
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Сетка */
+.filter form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.type-of-house {
+   margin-right: 150px;
+}
+
+.sorting-found {
+ border: 1px solid red;
+  display: flex;
+  flex-direction: row;
 }

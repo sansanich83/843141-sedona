@@ -10,37 +10,41 @@
 </head>
 
 <body>
-  <header class="main-header">
-    <a class="main-header-logo" href="index.html">
-      <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
-    </a>
-    <nav class="main-menu">
-      <ul>
-        <li><a href="info.html">информация</a></li>
-        <li><a href="foto_video.html">фото и видео</a></li>
-        <li><a href="map.html">карта штата</a></li>
-        <li class="menu-current"><a href="hotels.html">Гостиницы</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="main-header">
+        <a class="main-header-logo" href="index.html">
+          <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
+        </a>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="info.html">информация</a></li>
+            <li><a href="foto_video.html">фото и видео</a></li>
+            <li><a href="map.html">карта штата</a></li>
+            <li class="menu-current"><a href="hotels.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </header>
   <main>
     <h1 class="visually-hidden">Подбор гостиниц по параметрам</h1>
     <!-- фильтр -->
     <section class="filter">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Параметры подбора жилья</h2>
-        <h3>Инфраструктура:</h3>
-        <ul class="filter-param">
-          <li class="chekbox"><input id="pool-id" name="pool" type="checkbox"><label for="pool-id">Бассейн</label></li>
-          <li class="chekbox"><input id="parking-id" name="parking" type="checkbox"><label for="parking-id">Парковка</label></li>
-          <li class="chekbox"><input id="wi-fi-id" name="wi-fi" type="checkbox"><label for="wi-fi-id">Wi-Fi</label></li>
-        </ul>
-        <h3>Тип жилья:</h3>
-        <ul class="filter-param">
-          <li class="chekbox"><input id="inn-id" name="inn" type="checkbox"><label for="inn-id">Гостиница</label></li>
-          <li class="chekbox"><input id="motel-id" name="motel" type="checkbox"><label for="motel-id">Мотель</label></li>
-          <li class="chekbox"><input id="appartaments-id" name="appartaments" type="checkbox"><label for="appartaments-id">Апартаменты</label></li>
-        </ul>
+          <div class="infrastructure">
+            <h3>Инфраструктура:</h3>
+            <ul class="filter-param">
+              <li class="chekbox"><input id="pool-id" name="pool" type="checkbox"><label for="pool-id">Бассейн</label></li>
+              <li class="chekbox"><input id="parking-id" name="parking" type="checkbox"><label for="parking-id">Парковка</label></li>
+              <li class="chekbox"><input id="wi-fi-id" name="wi-fi" type="checkbox"><label for="wi-fi-id">Wi-Fi</label></li>
+            </ul>
+          </div>
+          <div class="type-of-house">
+            <h3>Тип жилья:</h3>
+            <ul class="filter-param">
+              <li class="chekbox"><input id="inn-id" name="inn" type="checkbox"><label for="inn-id">Гостиница</label></li>
+              <li class="chekbox"><input id="motel-id" name="motel" type="checkbox"><label for="motel-id">Мотель</label></li>
+              <li class="chekbox"><input id="appartaments-id" name="appartaments" type="checkbox"><label for="appartaments-id">Апартаменты</label></li>
+            </ul>
+          </div>
         <div class="price-range filter-param">
           <h3>Стоимость в сутки (Р):</h3>
           <div>
@@ -57,16 +61,18 @@
       <div class="sorting-found">
         <div><b>Найдено:</b><span class="result-number">3</span></div>
         <!-- Определить число найденных гостиниц после поиска с фильтром -->
-        <b>Сортировка:<b>
-            <ul class="sorting">
-              <li><a class="sorting-key" href="#">по цене</a></li>
-              <li><a class="sorting-key" href="#">по типу</a></li>
-              <li><a class="sorting-key" href="#">по рейтингу</a></li>
-            </ul>
-            <a aria-label="Сначала дешевые" class="sorting-key" href="#"><img src="img/icon-up-dir.svg" width="11" height="10"
-                alt="Сначала дешевые"></a>
-            <a aria-label="Сначала дорогие" class="sorting-key" href="#"><img src="img/icon-down-dir.svg" width="11" height="10"
-                alt="Сначала дорогие"></a>
+        <div><b>Сортировка:<b><div>
+        <ul class="sorting">
+          <li><a class="sorting-key" href="#">по цене</a></li>
+          <li><a class="sorting-key" href="#">по типу</a></li>
+          <li><a class="sorting-key" href="#">по рейтингу</a></li>
+        </ul>
+        <div><a aria-label="Сначала дешевые" class="sorting-key" href="#"><img src="img/icon-up-dir.svg" width="11" height="10"
+                alt="Сначала дешевые">
+        </a></div>
+        <div><a aria-label="Сначала дорогие" class="sorting-key" href="#"><img src="img/icon-down-dir.svg" width="11" height="10"
+                alt="Сначала дорогие">
+        </a></div>
       </div>
     </section>
     <!-- далее идет показ карточек гостиниц после поиска -->

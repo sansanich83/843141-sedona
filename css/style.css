@@ -311,3 +311,15 @@ div.index-form-header {
   display: flex;
   justify-content: space-between;
 }
+
+.hotel-1 {
+  display: flex;
+}
+.hotel-1 a:first-child {
+  
+  margin-left: 72px;
+  margin-right: 30px;
+}
+.hotel-1 div:nth-child(2) {
+  margin-right: 500px;
+}

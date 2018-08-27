@@ -222,7 +222,7 @@ article.about-sedona {
   display: flex;   
   justify-content: center;
   width:1200px;
-  height: 1px;
+  height: 0px;
 }
 
 .main-menu ul li:nth-child(2) {
@@ -318,6 +318,11 @@ div.index-form-header {
   font-size: 12px;
   line-height: 18px;
 }
+
+.checkbox input:focus {
+  outline: 1px solid orangered;
+}
+
 /* Карточка гостиницы */
 .hotel-card {
   border-top: 1px solid #e5e5e5;
@@ -336,6 +341,13 @@ div.index-form-header {
   padding-left: 17px;
 
 }
+.hotels-detail-button:hover {
+  background-color: #669ec0;
+}
+.hotels-detail-button:active { 
+  color: #88b6d1;
+  background-color: #5496bd;
+}
 .hotels-order-button {
   font-size: 14px;
   line-height: 26px;
@@ -345,7 +357,21 @@ div.index-form-header {
   min-height: 27px;
   padding-left: 17px;
 }
-
+.hotels-order-button:hover 
+.search-button:hover {
+  background-color: #604e43;
+}
+.hotels-order-button:active, 
+.search-button:active { 
+  color: #857871;
+  background-color: #503e33;
+}
+.about-hotel:hover h3 {
+  color:#81b3d2;
+}
+.about-hotel:active h3 {
+  color:#b2b2b2;
+}
 /* Сетка hotels.html*/
 .filter form {
   display: flex;

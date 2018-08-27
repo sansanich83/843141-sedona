@@ -143,7 +143,7 @@ article.about-sedona {
   width: 46px;
   height: 48px;
   float: left;
-  margin: 10px;
+  margin: 6px;
 }
 .social-icon {
   padding: 15px 15px;
@@ -399,4 +399,14 @@ div.index-form-header {
 .about-hotel div:last-child {
   /* margin-left: -72px; */
 
+}
+
+/* всплывающая форма тест */
+
+.search-form {
+  visibility: hidden;
+}
+
+.map:hover .search-form {
+  visibility: visible;
 }

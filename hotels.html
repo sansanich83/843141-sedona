@@ -11,9 +11,13 @@
 
 <body>
     <header class="main-header">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
-        </a>
+          <div class="main-header-logo">
+            <div class="centerer">
+              <a href="index.html">
+                  <img src="img/logo.svg" width="140" height="72" alt="Логотип сайта">
+              </a>
+            </div>
+          </div>
         <nav class="main-menu">
           <ul>
             <li><a href="info.html">информация</a></li>
@@ -79,42 +83,54 @@
     <!-- далее идет показ карточек гостиниц после поиска -->
     <section>
       <h2 class="visually-hidden">Найденные гостиницы</h2>
-      <div class="hotel-1">
+      <div class="hotel-card hotel-1">
         <a href="amara-resort.html"><img src="img/amara-resort.jpg" width="135" height="90" alt="Превью"></a>
-        <div>
-          <b>Amara resort & SPA</b>
-          <p class="house-type">Гостиница</p>
-          <p class="min-price">от 4000 Р.</p>
-          <a class="hotels-detail-button" href="#">Подробнее</a>
-          <a class="hotels-order-button" href="#">Забронировать</a>
+        <div class="about-hotel">
+          <h3>Amara resort & SPA</h3>
+          <div>
+            <p class="house-type">Гостиница</p>
+            <p class="min-price">от 4000 Р.</p>
+          </div>
+          <div>
+            <a class="hotels-detail-button" href="#">Подробнее</a>
+            <a class="hotels-order-button" href="#">Забронировать</a>
+          </div>
         </div>
         <div class="rating">
           <div aria-label="4 звезды" class="rating-stars"></div> <!-- фон с количеством звезд -->
           <p><span aria-label="оценка" class="rating-digit">Рейтинг:8,5</span></p>
         </div>
       </div>
-      <div class="hotel-2">
+      <div class="hotel-card hotel-2">
         <a href="desert-quail.html"><img src="img/desert-quail.jpg" width="135" height="90" alt="Превью"></a>
-        <div>
-          <b>Desert quail inn</b>
-          <p class="house-type">Мотель</p>
-          <p class="min-price">от 3000 Р.</p>
-          <a class="hotels-detail-button" href="#">Подробнее</a>
-          <a class="hotels-order-button" href="#">Забронировать</a>
+        <div class="about-hotel">
+          <h3>Desert quail inn</h3>
+          <div>
+            <p class="house-type">Мотель</p>
+            <p class="min-price">от 3000 Р.</p>
+          </div>
+          <div>
+            <a class="hotels-detail-button" href="#">Подробнее</a>
+            <a class="hotels-order-button" href="#">Забронировать</a>
+          </div>
         </div>
         <div class="rating">
           <div aria-label="3 звезды" class="rating-stars"></div> <!-- фон с количеством звезд -->
           <p><span aria-label="оценка" class="rating-digit">Рейтинг:8,9</span></p>
         </div>
       </div>
-      <div class="hotel-3">
+      <div class="hotel-card hotel-3">
         <a href="Villas-at-poco-diablo.html"><img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Превью"></a>
-        <div>
-          <b>Villas-at-poco-diablo</b>
-          <p class="house-type">Аппартаменты</p>
-          <p class="min-price">от 2000 Р.</p>
-          <a class="hotels-detail-button" href="#">Подробнее</a>
-          <a class="hotels-order-button" href="#">Забронировать</a>
+        <div class="about-hotel">
+          <h3>Villas-at-poco-diablo</h3>
+          <div>
+            <p class="house-type">Аппартаменты</p>
+            <p class="min-price">от 2000 Р.</p>
+          </div>
+          <div>
+            <a class="hotels-detail-button" href="#">Подробнее</a>
+            <a class="hotels-order-button" href="#">Забронировать</a>
+          </div>
         </div>
         <div class="rating">
           <div aria-label="2 звезды" class="rating-stars"></div> <!-- фон с количеством звезд -->
@@ -124,23 +140,24 @@
     </section>
   </main>
   <footer class="main-footer">
-    <div class=footer-social>
-      <b style="float:left;">#visitsedona</b>
-      <ul>
-        <li class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg"
-              width="17" height="15" alt="Иконка Твиттер"></a></li>
-        <li class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg"
-              width="12" height="22" alt="Иконка Фэйсбук"></a></li>
-        <li class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg"
-              width="20" height="16" alt="Иконка Ютуб"></a></li>
-      </ul>
-    </div>
-    <p class="footer-copyright">
-      <b>Website by</b>
-      <a class="html-academy" href="https://htmlacademy.ru"><img src="img/logo_HTMLacademy.svg" alt="HTML academy" width="115"
-          height="41"></a>
-    </p>
-  </footer>
+      <b>#visitsedona</b>
+      <div class=footer-social>
+        <ul>
+          <li class="social-button"><a aria-label="Follow me on Twitter" href="#"><img class="social-icon" src="img/t.svg"
+                width="17" height="15" alt="Иконка Твиттер"></a></li>
+          <li class="social-button"><a aria-label="Follow me on Facebook" href="#"><img class="social-icon" src="img/fb-icon.svg"
+                width="12" height="22" alt="Иконка Фэйсбук"></a></li>
+          <li class="social-button"><a aria-label="Follow me on YouTube" href="#"><img class="social-icon" src="img/youtube.svg"
+                width="20" height="16" alt="Иконка Ютуб"></a></li>
+        </ul>
+      </div>
+      <p class="footer-copyright">
+        <b>Website by</b>
+        <!-- TODO: png > svg -->
+        <a class="html-academy" href="https://htmlacademy.ru"><img class="html-logo" src="img/html-logo.svg.png" alt="HTML academy"
+            width="115" height="41"></a>
+      </p>
+    </footer>
 </body>
 
 </html>

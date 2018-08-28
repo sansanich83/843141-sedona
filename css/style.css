@@ -1,16 +1,15 @@
-
-  body {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding: 0;
-    font-family: "PT Sans", Arial, sans-serif;
-    font-size: 14px;
-    line-height: 26px;
-    font-weight: 700;
-    color: #000000;
-    text-transform: uppercase;
-    background-color: #f2f2f2;
+body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
 }
 
 body.index {
@@ -27,7 +26,7 @@ body.index {
   text-transform: uppercase;
   background-color: #f2f2f2;
 }
-  
+
 a {
   text-decoration: none;
   color: #000000;
@@ -42,7 +41,6 @@ a {
   padding: 0;
 }
 
- 
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -67,13 +65,14 @@ a {
 .main-menu a:hover,
 .main-menu a:focus {
   color: #81b3d2;
+  transition: 0.2s;
 }
 .main-menu a:active {
-  color:#b2b2b2;
+  color: #b2b2b2;
 }
-.menu-current a{
+.menu-current a {
   color: #766357;
-}
+} 
 .about-sedona h2 {
   font-size: 21px;
   line-height: 26px;
@@ -89,7 +88,7 @@ a {
   background-color: #ffffff;
 }
 .main-reason {
-  color:#ffffff;
+  color: #ffffff;
 }
 .main-reason div {
   width: 400px;
@@ -111,15 +110,15 @@ a {
 }
 .reason-1 img {
 }
-section.welcoming { 
+section.welcoming {
   width: 1200px;
   min-height: 508px;
-  background: url("../img/welcoming.jpg") 0% -80px ;
+  background: url("../img/welcoming.jpg") 0% -80px;
 }
 .polygon {
   width: 1200px;
   min-height: 508px;
-   background: url("../img/polygon.svg") no-repeat 0% 100%;
+  background: url("../img/polygon.svg") no-repeat 0% 100%;
 }
 .welcoming img {
   margin-left: 33%;
@@ -128,7 +127,7 @@ section.welcoming {
 .about-sedona-header {
   text-align: center;
 }
-article.about-sedona { 
+article.about-sedona {
   width: 1200px;
   background-color: #ffffff;
 }
@@ -141,28 +140,21 @@ article.about-sedona {
   background: url(../img/star.svg) no-repeat 5px,
     url(../img/star.svg) 25px no-repeat;
 }
-.social-button {
-  background: #81b3d2;
-  width: 46px;
-  height: 48px;
-  float: left;
-  margin: 6px;
-}
-.social-icon {
-  padding: 15px 15px;
-}
+
 .secondary-reason div {
   width: 400px;
   text-align: center;
   padding-left: 6%;
   padding-right: 6%;
 }
-.reason-1-more h4, .secondary-reason h4 {
+.reason-1-more h4,
+.secondary-reason h4 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
-.reason-1-more p, .secondary-reason p {
+.reason-1-more p,
+.secondary-reason p {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -174,7 +166,7 @@ article.about-sedona {
   font-weight: 700;
 }
 .index-form-header p {
-  width:400px;
+  width: 400px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -188,11 +180,10 @@ article.about-sedona {
   font-weight: 600;
   color: #ffffff;
   background-color: #766357;
-  padding:0;
+  padding: 0;
   text-align: center;
   box-sizing: border-box;
   padding-top: 30px;
-  
 }
 .map {
   background-image: url(../img/map.jpg);
@@ -201,30 +192,27 @@ article.about-sedona {
 }
 .search-button {
   background: #81b3d2;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
   border-style: none;
   width: 458px;
-  min-height: 58px; 
+  min-height: 58px;
 }
 .main-footer {
   width: 1200px;
   min-height: 120px;
 }
 
-
-
 /* Сетка флексбоксы */
 
-
- .main-header-logo {
+.main-header-logo {
   /* position: absolute;  */
-  display: flex;   
+  display: flex;
   justify-content: center;
-  width:1200px;
+  width: 1200px;
   height: 0px;
 }
 
@@ -232,12 +220,11 @@ article.about-sedona {
   margin-right: 250px;
 }
 
-
 .main-menu ul {
   height: 56px;
   display: flex;
   justify-content: space-around;
-  align-items: center ;
+  align-items: center;
 }
 
 .reason-1 {
@@ -300,7 +287,7 @@ div.index-form-header {
 /* Фильтр */
 
 .filter form {
-  background-color:#81b3d2;
+  background-color: #81b3d2;
   background-image: url(../img/filter_background.jpg);
   background-position: 0 -300px;
   background-repeat: no-repeat;
@@ -331,7 +318,7 @@ div.index-form-header {
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   padding-top: 18px;
-  padding-bottom: 17px
+  padding-bottom: 17px;
 }
 
 .hotels-detail-button {
@@ -342,12 +329,11 @@ div.index-form-header {
   width: 100px;
   min-height: 27px;
   padding-left: 17px;
-
 }
 .hotels-detail-button:hover {
   background-color: #669ec0;
 }
-.hotels-detail-button:active { 
+.hotels-detail-button:active {
   color: #88b6d1;
   background-color: #5496bd;
 }
@@ -360,21 +346,24 @@ div.index-form-header {
   min-height: 27px;
   padding-left: 17px;
 }
-.hotels-order-button:hover 
-.search-button:hover {
+.hotels-order-button:hover .search-button:hover {
   background-color: #604e43;
 }
-.hotels-order-button:active, 
-.search-button:active { 
+.hotels-order-button:active,
+.search-button:active {
   color: #857871;
   background-color: #503e33;
 }
 .about-hotel:hover h3 {
-  color:#81b3d2;
+  color: #81b3d2;
 }
 .about-hotel:active h3 {
-  color:#b2b2b2;
+  color: #b2b2b2;
 }
+.sorting-arrow a:hover {
+  background-color: red;
+}
+
 /* Сетка hotels.html*/
 .filter form {
   display: flex;
@@ -383,7 +372,7 @@ div.index-form-header {
 }
 
 .type-of-house {
-   margin-right: 150px;
+  margin-right: 150px;
 }
 
 .sorting-found {
@@ -422,21 +411,14 @@ div.index-form-header {
   justify-content: flex-start;
 }
 
-.about-hotel div:nth-child(2) {
-
- 
-}
 .about-hotel div:last-child {
-  margin:0;
+  margin: 0;
   padding: 0;
-
   display: block;
   justify-content: flex-start;
   align-content: flex-start;
   align-items: flex-start;
   text-align: left;
-  /* margin-left: -72px; */
-
 }
 
 /* всплывающая форма тест */
@@ -444,7 +426,65 @@ div.index-form-header {
 .search-form {
   visibility: hidden;
 }
-
 .map:hover .search-form {
   visibility: visible;
+}
+
+/* Футер */
+/* Социальные кнопки */
+
+.footer-social {
+  display: flex;
+  width: 150px;
+  padding: 0;
+}
+.social-button a:active path {
+  fill: #88b6d1;
+}
+
+.social-button {
+  flex-wrap: wrap;
+  display: flex;
+  background: #81b3d2;
+  margin: 6px;
+}
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+.social-button:active {
+  background-color: #5496bd;
+}
+.social-button a {
+  display: flex;
+  width: 46px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-copyright b {
+  align-self: center;
+  margin-bottom: 15px;
+}
+.html-academy path,
+.html-academy rect {
+  fill: #231f20;
+}
+
+a.html-academy:hover path,
+a.html-academy:hover rect,
+a.html-academy:focus path,
+a.html-academy:focus rect {
+  fill: #81b3d2;
+  transition: 0.5s;
+}
+a.html-academy:active path,
+a.html-academy:active rect {
+  fill: #bdbbbc;
 }

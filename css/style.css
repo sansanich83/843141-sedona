@@ -93,11 +93,13 @@ a {
 .main-reason {
   color: #ffffff;
 }
-.main-reason div {
+.main-reason div:first-child {
+  box-sizing: border-box;
   width: 400px;
-  height: 256px;
+  min-height: 256px;
   background-color: #81b3d2;
-  vertical-align: top;
+  padding-top: 25px;
+  padding-bottom: 40px;
   margin-left: 0;
 }
 .main-reason p {
@@ -106,6 +108,16 @@ a {
   text-align: center;
   font-weight: normal;
 }
+.img-reason-1 {
+  width: 800px;
+  background: url(../img/reason-1.png);
+
+}
+.reason-1-more p {
+  padding-left:50px;
+  padding-right: 50px;
+}
+
 .main-reason h3 {
   font-size: 21px;
   line-height: 21px;

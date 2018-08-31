@@ -27,29 +27,38 @@
     <h1 class="visually-hidden">Подбор гостиниц по параметрам</h1>
     <!-- фильтр -->
     <section class="filter">
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <h2 class="visually-hidden">Параметры подбора жилья</h2>
-          <div class="infrastructure">
-            <h3>Инфраструктура:</h3>
-            <ul class="filter-param">
-              <li class="checkbox"><input id="pool-id" name="pool" type="checkbox"><label for="pool-id">Бассейн</label></li>
-              <li class="checkbox"><input id="parking-id" name="parking" type="checkbox"><label for="parking-id">Парковка</label></li>
-              <li class="checkbox"><input id="wi-fi-id" name="wi-fi" type="checkbox"><label for="wi-fi-id">Wi-Fi</label></li>
-            </ul>
-          </div>
-          <div class="type-of-house">
-            <h3>Тип жилья:</h3>
-            <ul class="filter-param">
-              <li class="checkbox"><input id="inn-id" name="inn" type="checkbox"><label for="inn-id">Гостиница</label></li>
-              <li class="checkbox"><input id="motel-id" name="motel" type="checkbox"><label for="motel-id">Мотель</label></li>
-              <li class="checkbox"><input id="appartaments-id" name="appartaments" type="checkbox"><label for="appartaments-id">Апартаменты</label></li>
-            </ul>
-          </div>
+        <div class="infrastructure">
+          <h3>Инфраструктура:</h3>
+          <ul class="filter-param">
+            <li class="checkbox"><input id="pool-id" name="pool" type="checkbox"><label for="pool-id">Бассейн</label></li>
+            <li class="checkbox"><input id="parking-id" name="parking" type="checkbox"><label for="parking-id">Парковка</label></li>
+            <li class="checkbox"><input id="wi-fi-id" name="wi-fi" type="checkbox"><label for="wi-fi-id">Wi-Fi</label></li>
+          </ul>
+        </div>
+        <div class="type-of-house">
+          <h3>Тип жилья:</h3>
+          <ul class="filter-param">
+            <li class="checkbox">
+              <input id="inn-id" name="inn" type="checkbox">
+              <label for="inn-id">Гостиница</label>
+            </li>
+            <li class="checkbox">
+              <input id="motel-id" name="motel" type="checkbox">
+              <label for="motel-id">Мотель</label>
+            </li>
+            <li class="checkbox">
+              <input id="appartaments-id" name="appartaments" type="checkbox">
+              <label for="appartaments-id">Апартаменты</label>
+            </li>
+          </ul>
+        </div>
         <div class="price-range filter-param">
           <h3>Стоимость в сутки (Р):</h3>
           <div>
-            <label>от<input name="price-min" class="price-from"></label>
-            <label>до<input name="price-max" class="price-to"></label>
+            <label><input name="price-min" class="price from" placeholder="от"></label>
+            <label><input name="price-max" class="price to" placeholder="до"></label>
           </div>
           <input min="0" max="3000" step="100" value="100" type="range">
           <div>
@@ -69,17 +78,17 @@
           <li><a class="sorting-key" href="#">по рейтингу</a></li>
         </ul>
         <div class="sorting-arrow">
-          <a aria-label="Сначала дешевые" href="#">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-              width="11px" height="10px" viewBox="0 0 11 10">
-              <polyline fill="#cacaca" points="5.5,10 0,0 11,0 " />
-            </svg>
-          </a>
           <a aria-label="Сначала дорогие" href="#">
               <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="11px" height="10px" viewBox="0 0 11 10">
                 <polygon fill="#cacaca" points="5.5,0 0,10 11,10 " />
               </svg>
+          </a>
+          <a aria-label="Сначала дешевые" href="#">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              width="11px" height="10px" viewBox="0 0 11 10">
+              <polyline fill="#cacaca" points="5.5,10 0,0 11,0 " />
+            </svg>
           </a>
         </div>
       </div>
@@ -101,8 +110,8 @@
           </div>
         </div>
         <div class="rating">
-          <div aria-label="4 звезды" class="rating-stars"></div> <!-- фон с количеством звезд -->
-          <p><span aria-label="оценка" class="rating-digit">Рейтинг:8,5</span></p>
+          <div aria-label="4 звезды" class="rating-stars4"></div> <!-- фон с количеством звезд -->
+          <p><span aria-label="оценка" class="rating-digit">Рейтинг: 8,5</span></p>
         </div>
       </div>
       <div class="hotel-card hotel-2">
@@ -119,8 +128,8 @@
           </div>
         </div>
         <div class="rating">
-          <div aria-label="3 звезды" class="rating-stars"></div> <!-- фон с количеством звезд -->
-          <p><span aria-label="оценка" class="rating-digit">Рейтинг:8,9</span></p>
+          <div aria-label="3 звезды" class="rating-stars3"></div> <!-- фон с количеством звезд -->
+          <p><span aria-label="оценка" class="rating-digit">Рейтинг: 8,9</span></p>
         </div>
       </div>
       <div class="hotel-card hotel-3">
@@ -137,13 +146,13 @@
           </div>
         </div>
         <div class="rating">
-          <div aria-label="2 звезды" class="rating-stars"></div> <!-- фон с количеством звезд -->
-          <p><span class="rating-digit">Рейтинг:9,2</span></p>
+          <div aria-label="2 звезды" class="rating-stars2"></div> <!-- фон с количеством звезд -->
+          <p><span class="rating-digit">Рейтинг: 9,2</span></p>
         </div>
       </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer hotels-footer">
       <b>#visitsedona</b>
         <ul class="footer-social">
           <li class="social-button">

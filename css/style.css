@@ -223,11 +223,12 @@ article.about-sedona {
 /* Сетка флексбоксы */
 
 .main-header-logo {
-  /* position: absolute;  */
+  position: relative;
   display: flex;
   justify-content: center;
   width: 1200px;
   height: 0px;
+  z-index: 10;
 }
 
 .main-menu ul li:nth-child(2) {
@@ -317,12 +318,23 @@ div.index-form-header {
 }
 .checkbox label::after {
   position: absolute;
+  top: 0;
   left: -40px;
   content: "";
   width: 40px;
   height: 40px;
   display: block;
   background: url(../img/checkbox-off.svg) no-repeat;
+}
+.checkbox input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(../img/checkbox-on.svg) no-repeat;
 }
 
 .infrastructure,
@@ -367,6 +379,7 @@ div.index-form-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
 }
 
 .infrastructure ul,
@@ -390,6 +403,20 @@ div.index-form-header {
   border: 2px solid white;
   background: none;
   color: white;
+  font-size: 14px;
+  line-height: 21px;
+  width: 133px;
+  min-height: 32px;
+  text-align: center;
+  border-radius: 3px;
+  font-family: "PT Sans", Arial, sans-serif;
+  text-transform: uppercase;
+}
+.price-range button:hover {
+  margin-left: 90px;
+  border: 2px solid white;
+  background: white;
+  color: black;
   font-size: 14px;
   line-height: 21px;
   width: 133px;

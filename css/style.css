@@ -151,9 +151,7 @@ article.about-sedona {
   width: 1200px;
   background-color: #ffffff;
 }
-.date {
-  width: 346px;
-}
+
 
 .secondary-reason div {
   width: 400px;
@@ -214,6 +212,7 @@ article.about-sedona {
   border-style: none;
   width: 458px;
   min-height: 58px;
+  padding: 0;
 }
 .main-footer {
   width: 1200px;
@@ -280,16 +279,19 @@ div.index-form-header {
 }
 
 .search-form {
+  position: relative;
   background-color: #ffffff;
   margin: auto;
   width: 568px;
   min-height: 395px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  padding: 30px;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding:0px;
   box-sizing: border-box;
+  padding: 55px;
+ 
 }
 .main-footer {
   display: flex;
@@ -297,6 +299,94 @@ div.index-form-header {
   justify-content: space-around;
 }
 
+/* Поиск гостиницы в Седоне SEARCH-FORM */
+.date input{
+  box-sizing: border-box;
+  padding-right: 22px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left:10px;
+  width: 346px;
+  border: none;
+  background: #f2f2f2;
+}
+
+.date{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-form div:nth-child(3) {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.adults-number {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.adults-number div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.childs-number {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.childs-number div {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.people-number {
+  border: none;
+  background: #f2f2f2;
+  height: 37px;
+  padding: 0;
+}
+.button-minus {
+  width:37px;
+  padding-bottom: 7px;
+}
+.button-plus {
+  width:37px;
+}
+.input-adults,
+.input-childs {
+  padding-left: 10px;
+}
+
+.date input::after {
+  position: absolute;
+  right: 57px;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/calendar-peace.svg) no-repeat;
+}
+.date input:hover::after {
+  position: absolute;
+  right: 57px;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/calendar.svg) no-repeat;
+}
+.date input:active::after {
+  position: absolute;
+  right: 57px;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background: url(../img/calendar-click.svg) no-repeat;
+}
 /* Hotels.html */
 
 /* Фильтр */
@@ -335,6 +425,26 @@ div.index-form-header {
   height: 40px;
   display: block;
   background: url(../img/checkbox-on.svg) no-repeat;
+}
+.checkbox input[type="checkbox"]:checked:disabled + label::after {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(../img/checkbox-on-disabled.svg) no-repeat;
+}
+.checkbox input[type="checkbox"]:disabled + label::after {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  display: block;
+  background: url(../img/checkbox-off-disabled.svg) no-repeat;
 }
 
 .infrastructure,
@@ -542,10 +652,12 @@ div.index-form-header {
   margin-right: 6px;
   text-align: center;  
 }
-.hotels-detail-button:hover {
+.hotels-detail-button:hover,
+.search-button:hover {
   background-color: #669ec0;
 }
-.hotels-detail-button:active {
+.hotels-detail-button:active,
+.search-button:active {
   color: #88b6d1;
   background-color: #5496bd;
 }
@@ -561,11 +673,12 @@ div.index-form-header {
   display: block;
   text-align: center;
 }
-.hotels-order-button:hover {
+.hotels-order-button:hover,
+.form-title:hover {
   background-color: #604e43;
 }
 .hotels-order-button:active,
-.search-button:active {
+.form-title:active {
   color: #857871;
   background-color: #503e33;
 }
@@ -677,12 +790,14 @@ div.about-hotel {
 
 /* всплывающая форма тест */
 
-.search-form {
+/* .search-form {
   visibility: hidden;
 }
 .map:hover .search-form {
   visibility: visible;
-}
+} */
+
+
 
 /* Футер */
 .main-footer > b:first-child {
@@ -707,7 +822,7 @@ div.about-hotel {
   flex-wrap: wrap;
   display: flex;
   background: #81b3d2;
-  margin: 6px;
+  margin: 3px;
 }
 .social-button:hover,
 .social-button:focus {

@@ -110,26 +110,35 @@
     <!-- Начало карты -->
     <section class="map">
       <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-        <label>
-          <span>Дата заезда:</span>
-          <input class="date" name="arrival-date" placeholder="24 Апреля 2017">
+        <div class="date">
+          <label for="arrival-date">Дата заезда:</label>
+          <input type="date" id="arrival-date" name="arrival-date" value="2017-04-24">
+            <!-- <img src="img/calendar.svg" width="21" height="22" align="right" alt="календарь для выбора даты"> -->
+        </div>
+        <div class="date">
+          <label for="departure-date">Дата выезда:</label>
+          <input type="date" id="departure-date" name="departure-date" value="2017-07-04">
           <!-- <img src="img/calendar.svg" width="21" height="22" align="right" alt="календарь для выбора даты"> -->
-        </label>
-        <label>
-          <span>Дата выезда:</span>
-          <input class="date" name="departure-date" placeholder="4 Июля 2017">
-          <!-- <img src="img/calendar.svg" width="21" height="22" align="right" alt="календарь для выбора даты"> -->
-        </label>
-        <p><label for="adults-number"><span>Взрослые:</span></label>
-          <button class="button-minus" type="button"><img src="img/minus.png" width="12" height="3" alt="Уменьшить"></button>
-          <input id="adults-number" size="1" name="adults" placeholder="2">
-          <button class="button-plus" type="button"><img src="img/plus.png" width="11" height="11" alt="Увеличить"></button>
-          <label for="childs-number"><span>Дети:</span></label>
-          <button class="button-minus" type="button"><img src="img/minus.png" width="12" height="3" alt="Уменьшить"></button>
-          <input id="childs-number" size="1" name="childs" placeholder="0">
-          <button class="button-plus" type="button"><img src="img/plus.png" width="11" height="11" alt="Увеличить"></button>
-        </p>
-        <p><button class="search-button">Найти</button></p>
+        </div>
+        <div>
+          <div class="adults-number">
+            <label for="adults-number">Взрослые:</label>
+            <div>
+              <button class="button-minus people-number" type="button"><img src="img/minus.png" width="12" height="3" alt="Уменьшить"></button>
+              <input class="people-number input-adults" id="adults-number" size="1" name="adults" placeholder="2">
+              <button class="button-plus people-number" type="button"><img src="img/plus.png" width="11" height="11" alt="Увеличить"></button>
+            </div>
+          </div>
+          <div class="childs-number">
+            <label for="childs-number">Дети:</label>
+            <div>
+              <button class="button-minus people-number" type="button"><img src="img/minus.png" width="12" height="3" alt="Уменьшить"></button>
+              <input class="people-number input-childs" id="childs-number" size="1" name="childs" placeholder="0">
+              <button class="button-plus people-number" type="button"><img src="img/plus.png" width="11" height="11" alt="Увеличить"></button>
+            </div>
+          </div>
+        </div>
+        <button class="search-button">Найти</button>
       </form>
       <!-- Карта штата -->
 

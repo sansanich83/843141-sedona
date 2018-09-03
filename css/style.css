@@ -790,9 +790,10 @@ div.about-hotel {
 
 /* всплывающая форма тест */
 
-/* .search-form {
+ .hide-form {
   visibility: hidden;
 }
+/*
 .map:hover .search-form {
   visibility: visible;
 } */

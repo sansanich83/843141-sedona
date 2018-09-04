@@ -64,8 +64,9 @@ img {
   background-color: #ffffff;
 }
 .main-menu a {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  min-width: 128px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .main-menu a:hover,
 .main-menu a:focus {
@@ -89,12 +90,14 @@ img {
   padding: 40px;
 }
 .article-title {
-  font-size: 44x;
+  margin-top:27px;
+  font-size: 14x;
   line-height: 26px;
-  font-weight: 700;
+  font-weight: 400;
   color: #333333;
   background-color: #ffffff;
 }
+
 .main-reason {
   color: #ffffff;
 }
@@ -108,6 +111,7 @@ img {
   margin-left: 0;
 }
 .main-reason p {
+  margin-top: 23px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
@@ -122,13 +126,10 @@ img {
   padding-left:50px;
   padding-right: 50px;
 }
-
 .main-reason h3 {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
-}
-.reason-1 img {
 }
 section.welcoming {
   width: 1200px;
@@ -136,13 +137,12 @@ section.welcoming {
   background: url("../img/welcoming.jpg") 0% -80px;
 }
 .polygon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1200px;
   min-height: 508px;
   background: url("../img/polygon.svg") no-repeat 0% 100%;
-}
-.welcoming img {
-  margin-left: 33%;
-  margin-top: 76px;
 }
 .about-sedona-header {
   text-align: center;
@@ -151,20 +151,47 @@ article.about-sedona {
   width: 1200px;
   background-color: #ffffff;
 }
-
-
 .secondary-reason div {
   width: 400px;
   text-align: center;
   padding-left: 6%;
   padding-right: 6%;
 }
+.more {
+  width: 400px;
+  padding-bottom: 13px;
+}
+.more h4 {
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
 .reason-1-more h4,
 .secondary-reason h4 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
 }
+.secondary-reason h4 {
+  width: 140px;
+}
+.reason-3,
+.reason-4,
+.reason-5 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 13px;
+}
+.secondary-reason p {
+
+}
+.secondary-reason h4 {
+  margin-top: 22px;
+  margin-bottom: 25px;
+}
+
 .reason-1-more p,
 .secondary-reason p {
   font-size: 14px;
@@ -197,11 +224,7 @@ article.about-sedona {
   box-sizing: border-box;
   padding-top: 30px;
 }
-.map {
-  background-image: url(../img/map.jpg);
-  width: 1200px;
-  min-height: 473px;
-}
+
 .search-button {
   background: #81b3d2;
   color: #ffffff;
@@ -231,13 +254,18 @@ article.about-sedona {
 }
 
 .main-menu ul li:nth-child(2) {
-  margin-right: 250px;
+  margin-right: 240px;
+}
+.main-menu ul li:nth-child(3) {
+  padding-right: 15px;
 }
 
 .main-menu ul {
-  height: 56px;
+  padding-left: 73px;
+  padding-right: 73px;
+  min-height: 56px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -291,7 +319,7 @@ div.index-form-header {
   padding:0px;
   box-sizing: border-box;
   padding: 55px;
- 
+  z-index: 10;
 }
 .main-footer {
   display: flex;
@@ -387,6 +415,27 @@ div.index-form-header {
   height: 23px;
   background: url(../img/calendar-click.svg) no-repeat;
 }
+
+
+/* Карта */
+
+.map {
+  background-image: url(../img/map.jpg);
+  width: 1200px;
+  min-height: 473px;
+  position: relative;
+}
+
+
+
+.google-sedona {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+
+
 /* Hotels.html */
 
 /* Фильтр */
@@ -506,9 +555,10 @@ div.index-form-header {
 .price-range {
   position: absolute;
   right: 73px;
-  top: 30px;
+  top: 10px;
 }
 .price-range button {
+  margin-top: 20px;
   margin-left: 90px;
   border: 2px solid white;
   background: none;
@@ -537,9 +587,9 @@ div.index-form-header {
   text-transform: uppercase;
 }
 .price {
-  border: 2px solid white;
-  background: none;
-  color: white;
+  border: none;
+  background: none;  
+  color:#fff;
   font-size: 14px;
   line-height: 21px;
   width: 159px;
@@ -548,6 +598,70 @@ div.index-form-header {
   border-radius: 3px;
   font-family: "PT Sans", Arial, sans-serif;
   text-transform: uppercase;
+}
+
+.price::-webkit-input-placeholder { color:#fff; font-family: "PT Sans", Arial, sans-serif;}
+.price::-moz-placeholder { color:#fff; font-family: "PT Sans", Arial, sans-serif;}
+.price:-ms-input-placeholder { color:#fff; font-family: "PT Sans", Arial, sans-serif;}
+.price:-moz-placeholder { color:#fff; font-family: "PT Sans", Arial, sans-serif;}
+
+.price-conteiner {
+  position: relative;
+  border: 2px solid white;
+  background: none;
+  width: 316px;
+  min-height: 32px;
+  border-radius: 3px;
+  display: flex;
+}
+.price-conteiner::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  background: #ffffff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.range-controls {
+  background:  rgba(255, 255, 255, 0.3);
+  position: relative;
+  margin-top: 20px;
+}
+/* .range-controls .lane {
+  height: 2px;
+  background:
+} */
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: #ffffff;
+}
+
+.dual-range {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.dual-range:hover {
+  border: 9px solid #ffffff;
+}
+
+.dual-range.min {
+  left: 0;
+}
+
+.dual-range.max {
+  left: 80%;
 }
 
 /* сортировка */
@@ -634,9 +748,11 @@ div.index-form-header {
 .hotel-card {
   background-color:#fefefe;
   border-top: 1px solid #e5e5e5;
-  border-bottom: 1px solid #e5e5e5;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+.list-hotels-found > :nth-last-child(1) {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .hotels-detail-button {
@@ -788,17 +904,14 @@ div.about-hotel {
   align-items: flex-start;
 }
 
-/* всплывающая форма тест */
+/* всплывающая форма  */
 
- .hide-form {
+ .search-form {
   visibility: hidden;
 }
-/*
-.map:hover .search-form {
+.search-form-show {
   visibility: visible;
-} */
-
-
+}
 
 /* Футер */
 .main-footer > b:first-child {
@@ -865,4 +978,29 @@ a.html-academy:focus rect {
 a.html-academy:active path,
 a.html-academy:active rect {
   fill: #bdbbbc;
+}
+
+/* Анимация */
+.secondary-reason {
+  position: relative;
+  z-index: 20;
+}
+
+.index-form-header {
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: 20;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-400px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.search-form-show {  
+  animation: bounce 0.6s;
 }

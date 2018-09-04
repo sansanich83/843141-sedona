@@ -56,11 +56,16 @@
         </div>
         <div class="price-range filter-param">
           <h3>Стоимость в сутки (Р):</h3>
-          <div>
-            <label><input name="price-min" class="price from" placeholder="от"></label>
-            <label><input name="price-max" class="price to" placeholder="до"></label>
+          <div class="price-conteiner">
+            <label><input name="price-min" class="price from" placeholder="от 0"></label>
+            <label><input name="price-max" class="price to" placeholder="до 3000"></label>
           </div>
-          <input min="0" max="3000" step="100" value="100" type="range">
+          <div class="range-controls">
+            <div class="lane"></div>
+            <div class="bar"></div>        
+            <div class="dual-range min"></div>
+            <div class="dual-range max"></div>
+          </div>
           <div>
             <button type="submit">Показать</button>
           </div>
@@ -94,7 +99,7 @@
       </div>
     </section>
     <!-- далее идет показ карточек гостиниц после поиска -->
-    <section>
+    <section class="list-hotels-found">
       <h2 class="visually-hidden">Найденные гостиницы</h2>
       <div class="hotel-card hotel-1">
         <a href="amara-resort.html"><img src="img/amara-resort.jpg" width="135" height="90" alt="Превью"></a>

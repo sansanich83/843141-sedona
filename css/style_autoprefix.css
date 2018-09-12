@@ -1,5 +1,6 @@
 body {
-  box-shadow: -5px 0px 25px 0 #d1d1d1, 5px 0px 25px 0 #d1d1d1;
+  -webkit-box-shadow: -5px 0px 25px 0 #d1d1d1, 5px 0px 25px 0 #d1d1d1;
+          box-shadow: -5px 0px 25px 0 #d1d1d1, 5px 0px 25px 0 #d1d1d1;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
@@ -71,6 +72,8 @@ img {
 .main-menu a:hover,
 .main-menu a:focus {
   color: #81b3d2;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
 }
 .main-menu a:active {
@@ -102,7 +105,8 @@ img {
   color: #ffffff;
 }
 .main-reason div:first-child {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 400px;
   min-height: 256px;
   background-color: #81b3d2;
@@ -137,9 +141,15 @@ section.welcoming {
   background: url("../img/welcoming.jpg") 0% -80px;
 }
 .polygon {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 1200px;
   min-height: 508px;
   background: url("../img/polygon.svg") no-repeat 0% 100%;
@@ -152,11 +162,10 @@ article.about-sedona {
   background-color: #ffffff;
 }
 .secondary-reason div {
-  box-sizing: border-box;
   width: 400px;
   text-align: center;
-  padding-left: 72px;
-  padding-right: 72px;
+  padding-left: 6%;
+  padding-right: 6%;
 }
 .more {
   width: 400px;
@@ -179,10 +188,19 @@ article.about-sedona {
 .reason-3,
 .reason-4,
 .reason-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 13px;
 }
 .secondary-reason p {
@@ -222,7 +240,8 @@ article.about-sedona {
   background-color: #766357;
   padding: 0;
   text-align: center;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-top: 30px;
 }
 
@@ -239,20 +258,20 @@ article.about-sedona {
   padding: 0;
 }
 .main-footer {
-  box-sizing: border-box;
   width: 1200px;
   min-height: 120px;
-  padding-left:72px;
-  padding-right: 72px;
 }
-
 
 /* Сетка флексбоксы */
 
 .main-header-logo {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 1200px;
   height: 0px;
   z-index: 10;
@@ -269,47 +288,80 @@ article.about-sedona {
   padding-left: 73px;
   padding-right: 73px;
   min-height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reason-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
 }
 .reason-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 1200px;
-  flex-direction: row-reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 article.about-sedona {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .reason-1-more {
   min-height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  align-items: center;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .secondary-reason {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 256px;
   background-color: #eeeeee;
-  flex-wrap: wrap;
 }
 
 div.index-form-header {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   min-height: 291px;
   width: 1200px;
   padding-top: 50px;
@@ -324,24 +376,40 @@ div.index-form-header {
   margin: auto;
   width: 568px;
   min-height: 395px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding:0px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding: 55px;
   z-index: 10;
 }
 .main-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* Поиск гостиницы в Седоне SEARCH-FORM */
 .date input{
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   padding-right: 22px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -353,37 +421,69 @@ div.index-form-header {
 
 .date{
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .search-form div:nth-child(3) {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .adults-number {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .adults-number div {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .childs-number {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .childs-number div {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .people-number {
   border: none;
@@ -461,7 +561,9 @@ div.index-form-header {
   width: 1200px;
   min-height: 217px;
 }
-
+.checkbox input:focus {
+  outline: 1px solid lightskyblue;
+}
 .checkbox {
   position: relative;
 }
@@ -475,13 +577,6 @@ div.index-form-header {
   display: block;
   background: url(../img/checkbox-off.svg) no-repeat;
 }
-input:focus + label {
-  outline-color: lightskyblue;
-  outline-offset: -2px;
-  outline-style: auto;
-  outline-width: 5px;
-}
-
 .checkbox input[type="checkbox"]:checked + label::after {
   position: absolute;
   top: 0;
@@ -552,19 +647,31 @@ input:focus + label {
 
 .filter form {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 1;
 }
 
 .infrastructure ul,
 .type-of-house ul {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   min-height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -629,6 +736,8 @@ input:focus + label {
   width: 316px;
   min-height: 32px;
   border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .price-conteiner::after {
@@ -639,7 +748,9 @@ input:focus + label {
   background: #ffffff;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .range-controls {
@@ -666,7 +777,8 @@ input:focus + label {
   background: #ababab;
   border: 8px solid #ffffff;
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+          box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
 }
 .dual-range:hover {
@@ -684,7 +796,6 @@ input:focus + label {
 /* сортировка */
 
 .sorting-found {
-  box-sizing: border-box;
   width: 1200px;
   min-height: 100px;
 }
@@ -736,32 +847,40 @@ input:focus + label {
 }
 
 .sorting-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  padding-left: 72px;
-  padding-right: 72px;
-  /* position: relative; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
   background-color:#fefefe;
 }
 .sorting {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  max-width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .sorting-found >:nth-child(1) {
- width: 135px;
- margin-right: 28px;
+  position: absolute;
+  left: 73px;
 }
 .sorting-found >:nth-child(2) {
-margin-right: 38px;
+  position: absolute;
+  left: 235px;
 }
 .sorting-found >:nth-child(3) {
-  flex-grow: 1;
+  position: absolute;
+  left: 350px;
 }.sorting-found >:nth-child(4) {
-  /* position: absolute;
-  right: 70px; */
+  position: absolute;
+  right: 70px;
 }
 
 /* Карточка гостиницы */
@@ -776,7 +895,8 @@ margin-right: 38px;
 }
 
 .hotels-detail-button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 14px;
   line-height: 26px;
   color: #ffffff;
@@ -798,7 +918,8 @@ margin-right: 38px;
   background-color: #5496bd;
 }
 .hotels-order-button {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-size: 14px;
   line-height: 26px;
   color: #ffffff;
@@ -857,8 +978,12 @@ margin-right: 38px;
 /* Сетка hotels.html*/
 
 .hotel-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 .hotel-card > a:first-child {
@@ -883,10 +1008,19 @@ margin-right: 38px;
 }
 
 .about-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 370px;
   min-height: 152px;
   padding-bottom: 0px;
@@ -901,15 +1035,21 @@ margin-right: 38px;
   color: #333333;
 }
 div.about-hotel {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .about-hotel>div:nth-of-type(1){
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top:10px;
   padding-bottom:10px;
   min-width: 260px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .min-price {
   padding-right: 75px;
@@ -918,10 +1058,17 @@ div.about-hotel {
 .about-hotel div:last-child {
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 /* всплывающая форма  */
@@ -938,30 +1085,27 @@ div.about-hotel {
   font-size: 21px;
   line-height: 26px;
 }
-.main-footer {
+.hotels-footer {
   background-color:#fefefe;
 }
-.index-footer {
-  position: relative;
-  z-index: 50;
-  background-color: rgba(255, 255, 255, 0.8);
-}
-
 /* Социальные кнопки */
 
 .footer-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  min-width: 170px;
-  max-width: 625px;
+  width: 150px;
   padding: 0;
-  flex-wrap: wrap;
 }
 .social-button a:active path {
   fill: #88b6d1;
 }
 
 .social-button {
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background: #81b3d2;
   margin: 3px;
@@ -974,20 +1118,32 @@ div.about-hotel {
   background-color: #5496bd;
 }
 .social-button a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 46px;
   height: 48px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .footer-copyright {
   width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .footer-copyright b {
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   margin-bottom: 11px;
   font-weight: 400;
 }
@@ -1001,6 +1157,8 @@ a.html-academy:hover rect,
 a.html-academy:focus path,
 a.html-academy:focus rect {
   fill: #81b3d2;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
 a.html-academy:active path,
@@ -1020,42 +1178,29 @@ a.html-academy:active rect {
   z-index: 20;
 }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   0% {
-    transform: translateY(-400px);
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px);
   }
   100% {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-400px);
+            transform: translateY(-400px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
 .search-form-show {  
-  animation: bounce 0.6s;
-}
-
-
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
-
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
-}
-
-.search-error {
-  animation: shake 0.6s;
+  -webkit-animation: bounce 0.6s;  
+          animation: bounce 0.6s;
 }

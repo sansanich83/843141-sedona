@@ -78,7 +78,7 @@ img {
 }
 .article-title {
   margin-top:27px;
-  font-size: 14x;
+  font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: #333333;
@@ -248,11 +248,6 @@ article.about-sedona {
 /* Сетка флексбоксы */
 
 .main-header-logo {
-  /* border: 1px solid blue;
-  width: 140px;
-  margin-left: auto;
-  margin-right: auto;
-  display: block; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -403,13 +398,11 @@ div.index-form-header {
 .date input{
   position: relative;
   z-index: 50;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding-right: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left:10px;
-  width: 346px;
+  width: 384px;
   border: none;
   background: #f2f2f2;
   text-transform: uppercase;
@@ -418,6 +411,7 @@ div.index-form-header {
   color: #000;
   font-family:"PT Sans", Arial, sans-serif;
   font-weight: 700;
+  right: -17px;
 }
 
 .date{
@@ -432,6 +426,9 @@ div.index-form-header {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 30px;
+}
+.date label {
+  width: 122px;
 }
 .search-form div:nth-child(3) {
   width: 100%;
@@ -509,7 +506,7 @@ div.index-form-header {
 
 .date svg {
   position: relative;
-  right: 30px;
+  right: 15px;
   z-index: 60;
 }
 .date svg:hover path,
@@ -536,7 +533,10 @@ div.index-form-header {
   top: 0;
   z-index: 1;
 }
-
+.google-sedona iframe {
+  display: block;
+  border: none;
+}
 /* Hotels.html */
 
 /* Фильтр */
@@ -851,8 +851,7 @@ input:focus + label {
   display: flex;
   padding-left: 72px;
   padding-right: 72px;
-  padding-top:30px;
-  /* position: relative; */
+  padding-top:31px;
   background-color:#fefefe;
 }
 .sorting {
@@ -872,14 +871,13 @@ input:focus + label {
 }
 .sorting-found >:nth-child(2) {
 margin-right: 38px;
+margin-top:5px;
 }
 .sorting-found >:nth-child(3) {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }.sorting-found >:nth-child(4) {
-  /* position: absolute;
-  right: 70px; */
 }
 
 /* Карточка гостиницы */
@@ -1162,6 +1160,7 @@ div.about-hotel {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  overflow: hidden;         
 }
 .footer-copyright b {
   -ms-flex-item-align: center;

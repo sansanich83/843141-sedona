@@ -165,6 +165,8 @@ article.about-sedona {
   width: 400px;
   padding-left: 70px;
   padding-right: 69px;
+  margin-top: 45px;
+  margin-bottom: 0px;
 }
 .secondary-reason div:last-child {
   padding-left: 72px;
@@ -192,17 +194,17 @@ article.about-sedona {
   width: 140px;
   margin: 0;
   padding-left: 60px;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .reason-3,
 .reason-4,
 .reason-5 {
-  padding-top: 47px;
-  padding-bottom: 33px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .secondary-reason p {
   margin: 0;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 .reason-1-more p,
@@ -216,7 +218,7 @@ article.about-sedona {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  padding-bottom: 29px;
+  padding-bottom: 22px;
 }
 .index-form-header p {
   width: 450px;
@@ -345,9 +347,6 @@ article.about-sedona {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   min-height: 256px;
   background-color: #eeeeee;
   -ms-flex-wrap: wrap;
@@ -372,7 +371,7 @@ div.index-form-header {
   padding-top: 50px;
 }
 .index-form-header p {
-  margin-bottom: 44px;
+  margin-bottom: 48px;
   margin-top: 0px;
 }
 .search-form {
@@ -391,18 +390,18 @@ div.index-form-header {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  padding: 0px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 55px;
+  padding-top: 51px;
+  padding-right: 55px;
+  padding-bottom: 55px;
+  padding-left: 55px;
   z-index: 10;
 }
 .main-footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: distribute;
   justify-content: space-around;
@@ -429,7 +428,7 @@ div.index-form-header {
 }
 
 .date {
-  width: 100%;
+  width: 464px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -439,7 +438,7 @@ div.index-form-header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
 }
 .date label {
   width: 122px;
@@ -452,7 +451,8 @@ div.index-form-header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 33px;
+  margin-bottom: 53px;
+  margin-top:5px;
 }
 
 .adults-number {
@@ -520,12 +520,13 @@ div.index-form-header {
 }
 .input-adults,
 .input-childs {
-  padding-left: 10px;
+  padding-left: 14px;
+  padding-right: 5px;
 }
 
 .date svg {
   position: relative;
-  right: 15px;
+  right: 14px;
   z-index: 60;
 }
 .calendar:hover path,
@@ -1114,7 +1115,7 @@ div.about-hotel {
 }
 .main-footer {
   background-color: #fefefe;
-  padding-top: 10px;
+  padding-top: 0px;
 }
 .index-footer {
   position: relative;

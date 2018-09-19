@@ -5,7 +5,7 @@ var childsNumber = document.querySelector(".input-childs");
 var arrivalDate = document.querySelector("[name=arrival-date]");
 var departureDate = document.querySelector("[name=departure-date]");
 
-hidebutton.addEventListener("click", function (evt) {
+hidebutton.addEventListener("click", function(evt) {
   evt.preventDefault();
   formtoggle.classList.toggle("search-form-show");
 });
@@ -27,14 +27,13 @@ function changePeoplesNumber(e) {
     inputChilds.value++;
   }
 }
-formtoggle.addEventListener("submit", function (evt) {
-  if (adultsNumber.value == 0 && childsNumber.value == 0 ) {
-  evt.preventDefault();
-  formtoggle.classList.toggle("search-error");
-}
-  if (!arrivalDate.value || !departureDate.value ) {
-  evt.preventDefault();
-  formtoggle.classList.toggle("search-error");
-}
+formtoggle.addEventListener("submit", function(evt) {
+  if (adultsNumber.value == 0 && childsNumber.value == 0) {
+    evt.preventDefault();
+    formtoggle.classList.toggle("search-error");
+  }
+  if (!arrivalDate.value || !departureDate.value) {
+    evt.preventDefault();
+    formtoggle.classList.toggle("search-error");
+  }
 });
-

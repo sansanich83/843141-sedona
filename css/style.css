@@ -100,8 +100,7 @@ img {
   padding-top: 25px;
   padding-bottom: 40px;
   margin-left: 0;
-  max-height: 256px;
-  overflow-y: auto;
+  align-items: flex-start;
 }
 .main-reason p {
   margin-top: 22px;
@@ -118,6 +117,14 @@ img {
   background-color: #81b3d2;
   background-image: url(../img/reason-1.png);
   background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-reason-2 {
+  width: 800px;
+  background-color: #81b3d2;
+  background-image: url(../img/reason-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .reason-1-more p {
   padding-left: 50px;
@@ -172,7 +179,7 @@ article.about-sedona {
   padding-left: 72px;
 }
 .reason-1-more div:last-child {
-  padding-top:54px;
+  padding-top: 54px;
 }
 .more {
   padding-top: 60px;
@@ -322,10 +329,6 @@ article.about-sedona {
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
-  background-image: url(../img/reason-2.jpg);
-  background-repeat: no-repeat;
-  background-size: 800px 400px;
-  background-position-y: -75px;
   background-color: #81b3d2;
 }
 article.about-sedona {
@@ -456,7 +459,7 @@ div.index-form-header {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 53px;
-  margin-top:5px;
+  margin-top: 5px;
 }
 
 .adults-number {
@@ -578,7 +581,7 @@ div.index-form-header {
 
 .checkbox {
   position: relative;
-  margin:10px 0;
+  margin: 10px 0;
 }
 .checkbox label::after {
   position: absolute;
@@ -854,7 +857,7 @@ input:focus + label {
 }
 .sorting li {
   padding-right: 31px;
-  padding-left: 3px
+  padding-left: 3px;
 }
 .sorting-arrow {
   padding: 5px;

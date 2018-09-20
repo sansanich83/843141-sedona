@@ -282,6 +282,10 @@ article.about-sedona {
   margin-left: 20%;
 }
 
+.a-hotels {
+  padding-left: 17px;
+}
+
 .main-menu li {
   width: 20%;
   text-align: center;
@@ -564,7 +568,8 @@ div.index-form-header {
 .filter form {
   background-color: #81b3d2;
   background-image: url(../img/filter_background.jpg);
-  background-position: 0 -300px;
+  background-position: center center;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
   width: 1200px;
@@ -573,6 +578,7 @@ div.index-form-header {
 
 .checkbox {
   position: relative;
+  margin:10px 0;
 }
 .checkbox label::after {
   position: absolute;
@@ -683,8 +689,8 @@ input:focus + label {
 }
 
 .price-range button {
-  margin-top: 15px;
-  margin-left: 90px;
+  margin-top: 16px;
+  margin-left: 87px;
   border: 2px solid white;
   background: none;
   color: white;
@@ -733,7 +739,7 @@ input:focus + label {
 }
 .price-range {
   margin-right: 72px;
-  padding-bottom: 24px;
+  padding-bottom: 29px;
 }
 
 .price::-webkit-input-placeholder {
@@ -757,7 +763,7 @@ input:focus + label {
   position: relative;
   border: 2px solid white;
   background: none;
-  width: 316px;
+  width: 315px;
   min-height: 32px;
   border-radius: 3px;
   display: -webkit-box;
@@ -793,8 +799,8 @@ input:focus + label {
   padding: 0;
   padding-top: 0px;
   padding-right: 0px;
-  padding-bottom: 10px;
-  padding-left: 0px;
+  padding-bottom: 8px;
+  padding-left: 3px;
   margin-bottom: 0;
 }
 
@@ -847,7 +853,8 @@ input:focus + label {
   border-bottom: 1px dotted #81b3d2;
 }
 .sorting li {
-  padding-right: 30px;
+  padding-right: 31px;
+  padding-left: 3px
 }
 .sorting-arrow {
   padding: 5px;
@@ -882,8 +889,8 @@ input:focus + label {
   display: -ms-flexbox;
   display: flex;
   padding-left: 72px;
-  padding-right: 72px;
-  padding-top: 31px;
+  padding-right: 67px;
+  padding-top: 30px;
   background-color: #fefefe;
 }
 .sorting {
@@ -971,6 +978,7 @@ input:focus + label {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  padding-top: 5px;
 }
 .about-hotel > a:hover {
   color: #81b3d2;
@@ -1049,7 +1057,7 @@ input:focus + label {
   width: 370px;
   min-height: 132px;
   padding-bottom: 0px;
-  padding-top: 35px;
+  padding-top: 18px;
 }
 .about-hotel p {
   margin: 0;
@@ -1068,15 +1076,15 @@ div.about-hotel {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 11px;
+  padding-top: 7px;
+  padding-bottom: 15px;
   min-width: 260px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .min-price {
-  padding-right: 75px;
+  padding-right: 78px;
 }
 
 .about-hotel div:last-child {
@@ -1222,7 +1230,7 @@ a.html-academy:active rect {
 
 .index-form-header {
   position: relative;
-  background-color: #f2f2f2;
+  background-color: #fff;
   z-index: 20;
 }
 

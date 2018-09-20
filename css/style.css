@@ -117,14 +117,12 @@ img {
   background-color: #81b3d2;
   background-image: url(../img/reason-1.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .img-reason-2 {
   width: 800px;
   background-color: #81b3d2;
   background-image: url(../img/reason-2.png);
   background-repeat: no-repeat;
-  background-size: cover;
 }
 .reason-1-more p {
   padding-left: 50px;
@@ -267,7 +265,7 @@ article.about-sedona {
   width: 1200px;
   min-height: 120px;
   padding-left: 72px;
-  padding-right: 72px;
+  padding-right: 69px;
 }
 
 /* Сетка флексбоксы */
@@ -409,7 +407,7 @@ div.index-form-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   -ms-flex-pack: distribute;
   justify-content: space-around;
 }
@@ -1123,10 +1121,11 @@ div.about-hotel {
   -ms-flex-positive: 2;
   flex-grow: 2;
   text-align: center;
+  padding-top: 12px;
 }
 .main-footer {
   background-color: #fefefe;
-  padding-top: 0px;
+  padding-top: 32px;
 }
 .index-footer {
   position: relative;
@@ -1151,6 +1150,7 @@ div.about-hotel {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  margin: 0px;
 }
 .social-button a:active path {
   fill: #88b6d1;
@@ -1198,6 +1198,8 @@ div.about-hotel {
   -ms-flex-positive: 1;
   flex-grow: 1;
   overflow: hidden;
+  margin: 0px;
+  padding-top: 4px;
 }
 .footer-copyright b {
   -ms-flex-item-align: center;
@@ -1205,6 +1207,7 @@ div.about-hotel {
   align-self: center;
   margin-right: 8px;
   font-weight: 400;
+  padding-bottom: 6px;
 }
 .html-academy path,
 .html-academy rect {

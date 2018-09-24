@@ -705,18 +705,8 @@ input:focus + label {
   text-transform: uppercase;
 }
 .price-range button:hover {
-  margin-left: 90px;
-  border: 2px solid white;
   background: white;
   color: black;
-  font-size: 14px;
-  line-height: 21px;
-  width: 135px;
-  min-height: 34px;
-  text-align: center;
-  border-radius: 3px;
-  font-family: "PT Sans", Arial, sans-serif;
-  text-transform: uppercase;
 }
 .price {
   border: none;
